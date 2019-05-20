@@ -1,0 +1,280 @@
+! -- dealing with 4k display --
+Xft.dpi: 75
+! Xft.dpi: 192
+!Xft.dpi: 100
+!Xft.autohint: 0
+!Xft.lcdfilter:  lcddefault
+!Xft.hintstyle:  hintfull
+!Xft.hinting: 1
+!Xft.antialias: 1
+!Xft.rgba: rgb
+
+! ---------- fonts ------------
+!*font: -sgi-screen-medium-r-normal--17-120-100-100-m-0-iso8859-1
+!*font: -sgi-screen-medium-r-*-*-17-*-100-100-*-*-*-*
+*font: -sgi-screen-medium-r-*-*-12-*-*-*-*-*-*-*
+*boldFont: -sgi-screen-bold-r-*-*-12-*-*-*-*-*-*-*
+!*font: -sgi-screen-medium-r-normal--7-70-72-72-m-60-iso8859-1
+!*boldFont: -sgi-screen-bold-r-normal--7-70-72-72-m-60-iso8859-1
+
+! --------- xcursor ----------
+
+Xcursor.theme: Vanilla-DMZ
+Xcursor.size: 32
+
+! ---------- xterm ------------
+
+! 256 color mode support
+*customization: -color
+UXTerm*termName: xterm-256color
+UXTerm*metaSendsEscape: 1
+! Colors
+UXTerm*foreground: #a0a0a2
+
+! --------- colors ----------
+
+! special
+*.foreground:   #30742e
+*.background:   #16110b
+*.cursorColor:  #30742e
+
+! black
+*.color0:       #100c04
+*.color8:       #373b41
+
+! red
+*.color1:       #a54242
+*.color9:       #cc6666
+
+! green
+*.color2:       #8c9440
+*.color10:      #b5bd68
+
+! yellow
+*.color3:       #de935f
+*.color11:      #f0c674
+
+! blue
+*.color4:       #5f819d
+*.color12:      #81a2be
+
+! magenta
+*.color5:       #85678f
+*.color13:      #b294bb
+
+! cyan
+*.color6:       #5e8d87
+*.color14:      #8abeb7
+
+! white
+*.color7:       #707880
+*.color15:      #c5c8c6
+
+! ---------- urxvt -----------
+
+u xvt.scrollBar: None
+urxvt.internalBorder: 20
+
+!urxvt.boldfont: -sgi-screen-medium-r-normal--17-120-100-100-m-0-iso8859-1
+!urxvt.font: -sgi-screen-medium-r-normal-*-*-*-100-100-*-*-*-*
+!urxvt.boldFont: -sgi-screen-bold-r-normal--17-120-100-100-m-0-iso8859-1
+!urxvt.letterSpacing: 10
+
+! Misc options
+URxvt.termName : rxvt-256color
+URxvt.iso14755 : false
+URxvt.saveLines : 12000
+URxvt.scrollBar : false
+URxvt.scrollstyle : rxvt
+URxvt.jumpScroll: true
+URxvt.matcher.button: 1
+URxvt.keysym.C-Delete: perl:matcher:last
+URxvt.keysym.M-Delete: perl:matcher:list
+URxvt.depth: 32
+URxvt.intensityStyles: false
+
+URxvt.perl-ext-common : default,matcher,tabbedex,selection-to-clipboard
+
+! Tabs
+URxvt.tabbed.tabbar-fg: 191
+URxvt.tabbed.tabbar-bg: 8
+URxvt.tabbed.tab-fg:    0
+URxvt.tabbed.tab-bg:    10
+
+! Matcher
+URxvt.url-launcher: /home/johns/scripts/browser
+URxvt.matcher.rend.0: Uline Bold fg14
+
+! Real urxvt transparency (compton)
+urxvt.depth: 32
+urxvt.borderColor: #16110b
+urxvt.fading: 0
+urxvt.shading: 90
+
+! Toggle this for pseudo-transparency
+!urxvt.transparent: true
+
+! Background
+!URxvt.backgroundPixmap: /home/johns/wallpapers/tileable/black_scan.png;0x0+0+0:op=tile
+
+! ---------- xclock -----------
+
+xclock*update:            1
+xclock*analog:            false
+xclock*Foreground:        white
+xclock*background:        black
+
+! ----------- xosview ------------
+
+xosview*title: System statistics
+
+xosview*borderwidth: 0
+xosview*foreground: #eeeeee
+xosview*transparent: True
+xosview*background: #222222
+xosview*meterLabelColor: #555555
+xosview*usedLabelColor: #909090
+xosview*netPriority: 50
+
+xosview*loadProcColor: #c0c0c0
+xosview*loadIdleColor: #404040
+
+xosview*cpuIdleColor: #404040
+xosview*cpuWaitColor: #904040
+xosview*cpuSystemColor: #707070
+xosview*cpuUserColor: #909090
+
+xosview*cpuNiceColor: #909090
+xosview*cpuInterruptColor: #a0a0a0
+xosview*cpuFreeColor: #303030
+xosview*cpuDecay: True
+xosview*cpuGraph: True
+xosview*cpuPriority: 50
+
+xosview*memFreeColor: #404040
+xosview*memCacheColor: #606060
+xosview*memSlabColor: #808080
+xosview*memBufferColor: #a0a0a0
+xosview*memUsedColor: #c0c0c0
+xosview*memInactiveColor: #505050
+xosview*memSharedColor: #d0d0d0
+xosview*memTextColor: #42506e
+xosview*memOtherColor: #42506e
+xosview*memActiveColor: #42506e
+
+xosview*diskIdleColor: #404040
+xosview*diskReadColor: #606060
+xosview*diskWriteColor: #808080
+xosview*diskUsedColor: #666666
+xosview*diskGraph: True
+xosview*diskDecay: True
+
+xosview*swapFreeColor: #404040
+xosview*swapUsedColor: #c0c0c0
+
+xosview*pageIdleColor: #404040
+xosview*pageOutColor: #606060
+xosview*pageInColor: #808080
+
+xosview*PoorQualityColor: #90f0f0
+xosview*FairQualityColor: #606060
+x -sview*GoodQualityColor: #808080
+xosview*wirelessUsedColor: #a0a0a0
+
+xosview*netBackground: #404040
+xosview*netInColor: #606060
+xosview*netOutColor: #808080
+xosview*netBandwidth: 8589934592
+xosview*netDecay: True
+xosview*netGraph: True
+xosview*batteryLeftColor: #404040
+xosview*batteryChargeColor: #606060
+xosview*batteryUsedColor: #808080
+xosview*batteryFullColor: #a0a0a0
+xosview*batteryPriority: 50
+xosview*batteryUsedFormat: percent
+
+! --------------- xcalendar ----------------------
+!
+xcalendar*title: Calendar
+xcalendar*calendarDir: /home/johns/.calendar
+xcalendar*markHoliday: True
+xcalendar*markBackground: Black
+xcalendar*markCurrent: True
+xcalendar*resizable: True
+xcalendar*daynames.SUN*Foreground: Darkred
+xcalendar*firstDay: 1
+xcalendar*daynumbers.7*Foreground: Darkred
+xcalendar*daynumbers.8*Foreground: Black
+xcalendar*daynumbers.14*Foreground: Darkred
+xcalendar*daynumbers.15*Foreground: Black
+xcalendar*daynumbers.21*Foreground: Darkred
+xcalendar*daynumbers.22*Foreground: Black
+xcalendar*daynumbers.28*Foreground: Darkred
+xcalendar*daynumbers.29*Foreground: Black
+xcalendar*daynumbers.35*Foreground: Darkred
+xcalendar*daynumbers.36*Foreground: Black
+xcalendar*holiday*cursorPositionVisible: True
+xcalendar*holiday*displayCaret: True
+
+! ------- XFONTSEL ------
+xfontsel*menu*showUnselectable: false
+xfontsel*sampleText.background: #101010
+xfontsel*MenuButton.shadowWidth: 0
+xfontsel*Toggle*ToggleStyle: check
+xfontsel*MenuButton*Justify: left
+xfontsel*MenuButton*MenuButtonStyle: select
+xfontsel.pane.commandBox.quitButton.background: #777777
+xfontsel.pane.commandBox.quitButton.foreground: snow
+xfontsel.pane.commandBox.ownButton.background: orange3
+xfontsel.pane.commandBox.ownButton.foreground: snow
+xfontsel.pane.commandBox.countLabel.background: snow
+xfontsel.pane.viewPort.sampleText.background: #777777
+xfontsel.pane.viewPort.sampleText.foreground: snow
+xfontsel.pane.fieldBox*.background: #777777
+xfontsel.pane.fieldBox*.foreground: snow
+xfontsel.pane.fieldBox*foreground: #00ff00
+xfontsel.pane.fieldBox.MenuButton.borderWidth:   1
+xfontsel.pane.fieldBox.MenuButton.internalHeight:1
+xfontsel.pane.fieldBox.MenuButton.internalWidth: 2
+xfontsel.pane.fieldBox.MenuButton.shapeStyle:    rectangle
+
+! ---------- xscreensaver ---------
+
+xscreensaver.splash: False
+xscreensaver.fade: False
+xscreensaver.unfade: False
+xscreensaver.font: -sgi-screen-medium-r-normal--17-120-100-100-m-0-iso8859-1
+xscreensaver.mode: blank
+xscreensaver.initialDelay: 0
+xscreensaver.Dialog.headingFont: -sgi-screen-medium-r-normal--17-120-100-100-m-0-iso8859-1
+xscreensaver.Dialog.bodyFont: -sgi-screen-medium-r-normal--17-120-100-100-m-0-iso8859-1
+xscreensaver.Dialog.labelFont: -sgi-screen-medium-r-normal--17-120-100-100-m-0-iso8859-1
+xscreensaver.Dialog.unameFont: -sgi-screen-medium-r-normal--17-120-100-100-m-0-iso8859-1
+xscreensaver.Dialog.buttonFont: -sgi-screen-medium-r-normal--17-120-100-100-m-0-iso8859-1
+xscreensaver.Dialog.dateFont: -sgi-screen-medium-r-normal--17-120-100-100-m-0-iso8859-1
+xscreensaver.passwd.passwdFont: -sgi-screen-medium-r-normal--17-120-100-100-m-0-iso8859-1
+
+!general dialog box (affects main hostname, username, password text)
+xscreensaver.Dialog.foreground:         #55ff55
+xscreensaver.Dialog.background:         #111111
+xscreensaver.Dialog.topShadowColor:     #111111
+xscreensaver.Dialog.bottomShadowColor:  #111111
+xscreensaver.Dialog.Button.foreground:  #66ff99
+xscreensaver.Dialog.Button.background:  #111111
+
+!username/password input box and date text colour
+xscreensaver.Dialog.text.foreground:    #66ff66
+xscreensaver.Dialog.text.background:    #111111
+xscreensaver.Dialog.internalBorderWidth:24
+xscreensaver.Dialog.borderWidth:        20
+xscreensaver.Dialog.shadowThickness:    2
+
+!timeout bar (background is actually determined by Dialog.text.background)
+xscreensaver.passwd.thermometer.foreground:  #00ff00
+xscreensaver.passwd.thermometer.background:  #000000
+xscreensaver.passwd.thermometer.width:       12
+
+!datestamp format--see the strftime(3) manual page for details
+xscreensaver.dateFormat:    %I:%M%P %a %b %d, %Y
+

@@ -1,0 +1,43 @@
+# Custom functions
+DestroyFunc Move-or-Raise
+AddToFunc Move-or-Raise
++ I Raise
++ M Move
+DestroyFunc Move-or-Iconify
+AddToFunc Move-or-Iconify
++ I Raise
++ M Move
++ D Iconify
+DestroyFunc Resize-or-Raise
+AddToFunc Resize-or-Raise
++ I Raise
++ M Resize
+DestroyFunc drag-n-move
+AddToFunc drag-n-move M Move-or-Raise
+DestroyFunc drag-n-resize
+AddToFunc drag-n-resize M resize
+
+# Simple default mouse bindings for the root window:
+Mouse 1	R A           Menu RootMenu Nop
+Mouse 2	R A           Menu Window-Ops Nop
+Mouse 3	R A           WindowList
+# ... and for the title bar buttons:
+Mouse 0	1 A           Menu Window-Ops Close
+Mouse 0	2 A           Maximize
+Mouse 0	4 A           Iconify
+# ... and other parts of the windows / borders / icons:
+Mouse 1	FS   A        Resize-or-Raise
+Mouse 1	T    A        Move-or-Raise
+Mouse 1	I    A        Move-or-Iconify
+Mouse 2	I    A        Iconify
+Mouse 2	FST  A        Menu Window-Ops Nop
+Mouse 3 TSIF A        RaiseLower
+
+# Alt-move and Alt-resize
+Mouse 1 W M drag-n-move
+Mouse 3 W M drag-n-resize
+
+# Click anywhere to raise window
+Style * MouseFocusClickRaises
+
+

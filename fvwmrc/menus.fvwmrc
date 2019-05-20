@@ -1,0 +1,22 @@
+AddToMenu RootMenu "Root Menu" Title
++ "&Terminal"         Exec urxvt
++ "&Clock"            Exec exec xclock
++ ""                  Nop
++ "&Window Ops"       Popup Window-Ops
++ "&X11 Session"      Popup X11-Session
+
+AddToMenu Window-Ops
++ "&Move"             Move
++ "&Resize"           Resize
++ "&Stick"            Stick
++ ""                  Nop
++ "&Close"            Close
++ "&Destroy"          Destroy
+
+AddToMenu X11-Session
++ "Re&fresh Screen"   Refresh
++ "&Restart WM"       Restart
++ ""                  Nop
++ "Exit to xterm"     Restart xterm
++ "Exit WM" Quit
+

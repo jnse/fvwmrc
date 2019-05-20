@@ -1,0 +1,22 @@
+# Ignore the "Numlock" key so it does not interfere with keyboard shortcuts
+IgnoreModifiers L2
+
+# Ctrl+Alt virtual desktop navigation
+Key Up A CM           Scroll -100000 0
+Key Down A CM         Scroll  100000 0
+Key Page_Up A CM      Scroll -100000 0
+Key Page_Down A CM Scroll 100000 0
+
+# Alt-Tab behavior
+Key Tab A M WindowList Root c c CurrentDesk, NoGeometry, CurrentAtEnd, IconifiedAtEnd
+
+# Function keys
+Key F12 A S Close
+Key F11 A S Maximize
+Key F10 A S Iconify
+Key F8  A S Menu RootMenu Nop
+Key F6  A S Menu Window-Ops Nop
+Key F3  A S Exec exec thunderbird
+Key F2  A S Exec exec firefox
+Key F1  A S Exec urxvt
+

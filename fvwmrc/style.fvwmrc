@@ -1,0 +1,62 @@
+# Defaults
+DefaultColors \#16110b \#30742e
+DefaultFont -sgi-screen-medium-r-*-*-8-*-*-*-*-*-*-*
+Style * Font -sgi-screen-medium-r-*-*-8-*-*-*-*-*-*-*
+Style * BorderWidth 1
+Style * ForeColor \#30742e
+
+# Emulate Mwm makes resize information appear in the window 
+# rather than the top-right of the screen.
+Emulate Mwm
+
+# Vertical titlebars!
+Style * TitleAtLeft
+# Titlebar styling
+DestroyDecor TitleBarStyle
+AddToDecor   TitleBarStyle
++ TitleStyle RightJustified Height 16
++ TitleStyle -- Flat
++ ButtonStyle All -- Flat
++ AddButtonStyle 1 Vector 5 25x40@1 25x60@1 75x60@0 75x40@0 25x40@1
++ AddButtonStyle 2 Vector 4 50x25@1 75x75@0 25x75@0 50x25@1
++ AddButtonStyle 4 Vector 4 50x75@1 25x25@1 75x25@1 50x75@0
++ ButtonStyle 1 - Clear MWMDecorMenu
++ ButtonStyle 2 - Clear MWMDecorMax
++ ButtonStyle 4 - Clear MWMDecorMin
+Style * UseDecor TitleBarStyle
+
+# Menu background
+MenuStyle * Background \#16110b
+# Menu foreground
+MenuStyle * Foreground \#30742e
+# Menu placement
+MenuStyle * Mwm
+# Inactive window color
+Style * BackColor \#332b23
+# Active window color
+Style * HilightBack \#7e705a
+Style * HilightFore \#beb66b
+
+# Window borders
+Style * HandleWidth 2
+Style Fvwm* BorderWidth 1
+
+# Moving windows against the screen-edge to switch desktops.
+Style * EdgeMoveDelay 250
+Style * EdgeMoveResistance 10
+
+Style * HintOverride
+Style * Icon /usr/share/pixmaps/fvwm/xterm.xpm
+Style * IconBox 1 -300 -1 -1, IconFill Left Bottom
+Style * TileCascadePlacement
+Style * !UsePPosition
+
+# FVWM internal windows, like the pager and such, should not
+# show up in the window list, nor have a titlebar, etc,..
+Style Fvwm* CirculateSkip
+Style Fvwm* CirculateSkipIcon
+Style Fvwm* Sticky
+Style Fvwm* !Title
+Style Fvwm* WindowListSkip
+
+

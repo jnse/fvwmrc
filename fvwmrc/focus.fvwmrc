@@ -1,0 +1,12 @@
+# Focus follows mouse by default.
+Style * MouseFocus
+
+# Make sure urgent windows are focused/unminified.
+DestroyFunc UrgencyFunc
+AddToFunc   UrgencyFunc
++ I Iconify off
++ I Raise
+
+# This makes sure new windows get focus.
+Style * FPGrabFocus
+

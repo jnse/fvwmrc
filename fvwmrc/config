@@ -1,0 +1,34 @@
+
+DestroyFunc StartFunction
+AddToFunc StartFunction
++ I Module FvwmCommandS
++ I Read menus.fvwmrc
++ I Read global_mouse_bindings.fvwmrc
++ I Read global_key_bindings.fvwmrc
++ I Read focus.fvwmrc
++ I Read style.fvwmrc
++ I Read panel.fvwmrc
+
+# Snappyness
+SnapAttraction 8 All
+SnapGrid 8
+
+# Callback functions
+DestroyFunc InitFunction
+AddToFunc InitFunction
++ I Nop
+DestroyFunc RestartFunction
+AddToFunc RestartFunction
++ I Nop
+DestroyFunc SessionInitFunction
+AddToFunc SessionInitFunction
++ I Nop
+DestroyFunc SessionRestartFunction
+AddToFunc SessionRestartFunction
++ I Nop
+
+ClickTime 750
+DeskTopSize 1x6
+EdgeResistance 250
+EdgeScroll 0 0
+

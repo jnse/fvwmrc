@@ -1,0 +1,2 @@
+# fvwmrc
+My fvwm configuration

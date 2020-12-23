@@ -51,6 +51,8 @@ Style * IconBox 1 -300 -1 -1, IconFill Left Bottom
 Style * TileCascadePlacement
 Style * !UsePPosition
 
+Style * NoIcon
+
 # FVWM internal windows, like the pager and such, should not
 # show up in the window list, nor have a titlebar, etc,..
 Style Fvwm* CirculateSkip

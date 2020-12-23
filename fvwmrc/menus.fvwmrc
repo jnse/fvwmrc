@@ -4,6 +4,7 @@ AddToMenu RootMenu "Root Menu" Title
 + ""                  Nop
 + "&Window Ops"       Popup Window-Ops
 + "&X11 Session"      Popup X11-Session
++ "FVWM Console"      Module FvwmConsole
 
 AddToMenu Window-Ops
 + "&Move"             Move
@@ -19,4 +20,3 @@ AddToMenu X11-Session
 + ""                  Nop
 + "Exit to xterm"     Restart xterm
 + "Exit WM" Quit
-

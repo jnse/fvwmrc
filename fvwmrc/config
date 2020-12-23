@@ -2,12 +2,20 @@
 DestroyFunc StartFunction
 AddToFunc StartFunction
 + I Module FvwmCommandS
++ I Module FvwmEvent
++ I Module FvwmMFL
 + I Read menus.fvwmrc
++ I Read desktop_menu.fvwmrc
++ I Read tiling.fvwmrc
 + I Read global_mouse_bindings.fvwmrc
 + I Read global_key_bindings.fvwmrc
 + I Read focus.fvwmrc
++ I Read systray.fvwmrc
 + I Read style.fvwmrc
++ I Read taskbar.fvwmrc
++ I Read pager.fvwmrc
 + I Read panel.fvwmrc
++ I Read background.fvwm
 
 # Snappyness
 SnapAttraction 8 All
@@ -28,7 +36,4 @@ AddToFunc SessionRestartFunction
 + I Nop
 
 ClickTime 750
-DeskTopSize 1x6
-EdgeResistance 250
-EdgeScroll 0 0
 

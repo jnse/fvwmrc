@@ -1,0 +1,47 @@
+DestroyFunc TileLeft
+AddToFunc TileLeft
++ I ThisWindow (!Shaded, !Iconic) Maximize True 50 100
++ I ThisWindow (!Shaded, !Iconic) Move screen c +0 +0
++ I WarpToWindow 50 50
+
+DestroyFunc TileRight
+AddToFunc TileRight
++ I ThisWindow (!Shaded, !Iconic) Maximize True 50 100
++ I ThisWindow (!Shaded, !Iconic) Move screen c -0 +0
++ I WarpToWindow 50 50
+
+DestroyFunc TileTop
+AddToFunc TileTop
++ I ThisWindow (!Shaded, !Iconic) Maximize True 100 50
++ I ThisWindow (!Shaded, !Iconic) Move screen c +0 +0
++ I WarpToWindow 50 50
+
+DestroyFunc TileBottom
+AddToFunc TileBottom
++ I ThisWindow (!Shaded, !Iconic) Maximize True 100 50
++ I ThisWindow (!Shaded, !Iconic) Move screen c +0 -0
++ I WarpToWindow 50 50
+
+DestroyFunc TileTopLeft
+AddToFunc TileTopLeft
++ I ThisWindow (!Shaded, !Iconic) Maximize True 50 50
++ I ThisWindow (!Shaded, !Iconic) Move screen c +0 +0
++ I WarpToWindow 50 50
+
+DestroyFunc TileTopRight
+AddToFunc TileTopRight
++ I ThisWindow (!Shaded, !Iconic) Maximize True 50 50
++ I ThisWindow (!Shaded, !Iconic) Move screen c -0 +0
++ I WarpToWindow 50 50
+
+DestroyFunc TileBottomLeft
+AddToFunc TileBottomLeft
++ I ThisWindow (!Shaded, !Iconic) Maximize True 50 50
++ I ThisWindow (!Shaded, !Iconic) Move screen c +0 -0
++ I WarpToWindow 50 50
+
+DestroyFunc TileBottomRight
+AddToFunc TileBottomRight
++ I ThisWindow (!Shaded, !Iconic) Maximize True 50 50
++ I ThisWindow (!Shaded, !Iconic) Move screen c -0 -0
++ I WarpToWindow 50 50

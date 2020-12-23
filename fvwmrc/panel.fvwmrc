@@ -1,53 +1,36 @@
-# Iconman defaults ------------------------------------------------------------
 
-#*FvwmIconMan*NumManagers 3
-# Window list buttons styling
-*FvwmIconMan*DrawIcons true
-*FvwmIconMan*Background #14110e
-*FvwmIconMan*Foreground #a5601f
-# Unfocused window buttons
-*FvwmIconMan*PlainButton flat #a5601f #14110e
-# Active window button
-*FvwmIconMan*FocusButton flat #332b23 #7e705a
-# Mouse hover button
-*FvwmIconMan*SelectButton flat #a9ada5 #7e705a
-*FvwmIconMan*FocusAndSelectButton flat #a9ada5 #7e705a
-# Focus and raise when clicked.
-*FvwmIconMan*Action Mouse 0 N sendcommand Raise
-*FvwmIconMan*Resolution global
-*FvwmIconMan*Title ""
+# Things to configure ---------------------------------------------------------
 
-DestroyModuleConfig TerminalMan: *
-*TerminalMan: Show resource=urxvt resource=xterm resource=uxterm resource=rxvt resource=konsole resource=gnome-terminal
+SetEnv MainPanelHeight 66
+SetEnv MainPanelMonitorName "HDMI-0"
+SetEnv MainPanelMonitorNumber 0
 
-DestroyModuleConfig BrowserMan: *
-*BrowserMan: Show resource=firefox class=Navigator class=Firefox class=chromium-browser-chromium class=Chromium-browser-chromium resource=chromium resource=chrome resource=google-chrome resource=lynx resource=elinks2 resource=links resource=firefox-bin
+# Style -----------------------------------------------------------------------
 
-DestroyModuleconfig MiscMan: *
-*MiscMan: DontShow class=Firefox class=Navigator class=urxvt class=URxvt class=xterm class=uxterm class=XTerm class=chromium-browser-chromium class=Chromium-browser-chromium
+Style "MainPanel" NoTitle, !Handles, !Borders, Sticky, WindowListSkip, \
+  CirculateSkip, StaysOnBottom, FixedPosition, FixedSize, !Iconifiable
 
-# Pager -----------------------------------------------------------------------
+# Compute vars ----------------------------------------------------------------
 
-DesktopSize 1x1
-DesktopName 0 Misc
-DesktopName 1 Code
-DesktopName 2 Comms
-DesktopName 3 System
+PipeRead 'echo SetEnv MainPanelMonitorHeight \$[monitor.$[MainPanelMonitorNumber].height]'
+PipeRead 'echo SetEnv MainPanelMonitorWidth \$[monitor.$[MainPanelMonitorNumber].width]'
+PipeRead 'echo SetEnv MainPanelY $(($[MainPanelMonitorHeight]-$[MainPanelHeight]))'
 
-# Panel -----------------------------------------------------------------------
+# Struts ----------------------------------------------------------------------
 
-DestroyModuleConfig MyPanel: *
-*MyPanel: Geometry 150x1080+1770+0
-*MyPanel: BoxSize fixed
-*MyPanel: Rows 1
-*MyPanel: Columns 1
-*MyPanel: Frame 0
-*MyPanel: Back #a0a0a0
-*MyPanel: Fore #ff0000
-*MyPanel: (1x1, Size 190 1080, Swallow(UseOld) tint2 'Exec tint2')
-Style "MyPanel" NoTitle, !Handles, !Borders, Sticky, WindowListSkip, \
-  CirculateSkip, StaysOnBottom, FixedPosition, FixedSize, !Iconifiable, NeverFocus
-Module FvwmButtons MyPanel
-Style "tint2" !Title, !Handles, !borders, StaysOnTop, EWMHIgnoreStrutHints, Sticky, EWMHPlacementIgnoreWorkingArea, NeverFocus, WindowListSkip
+EwmhBaseStruts 0 0 0 $[MainPanelHeight]
 
-EwmhBaseStruts 0 150 0 0
+# Panel module definition -----------------------------------------------------
+
+DestroyModuleConfig MainPanel: *
+*MainPanel: Geometry $[MainPanelMonitorWidth]x$[MainPanelHeight]+0+$[MainPanelY]@$[MainPanelMonitorName]
+*MainPanel: Colorset 9
+*MainPanel: Rows 1
+*MainPanel: Columns 1
+*MainPanel: Frame 0
+*MainPanel: Padding 10 2
+*MainPanel: Font "Shadow=3:xft:Sans:Bold:pixelsize=14:minspace=True:antialias=True"
+*MainPanel: (8x1, Frame 0, Swallow FvwmIconMan 'Module FvwmIconMan')
+*MainPanel: (4x1, Frame 0, Swallow FvwmPager 'Module FvwmPager 0 3')
+*MainPanel: (1x1, Frame 0, Swallow(Kill) stalonetray 'Exec exec stalonetray --icon-gravity SW')
+Module FvwmButtons MainPanel

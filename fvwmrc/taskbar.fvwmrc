@@ -1,0 +1,19 @@
+Style "FvwmTaskBar" NoTitle,BorderWidth 4,HandleWidth 4,Sticky,WindowListSkip,CirculateSkip
+
+DestroyModuleConfig FvwmIconMan: *
+*FvwmIconMan: numManagers 1
+*FvwmIconMan: Resolution  desktop
+*FvwmIconMan: background  black
+*FvwmIconMan: foreground  green
+*FvwmIconMan: followfocus false
+*FvwmIconMan: plainbutton up black bisque3
+*FvwmIconMan: selectbutton down black bisque3
+*FvwmIconMan: focusbutton up yellow firebrick
+*FvwmIconMan: focusandselectButton down yellow firebrick
+*FvwmIconMan: drawicons true
+*FvwmIconMan: managergeometry 2x2
+*FvwmIconMan*action      Mouse   1 N sendcommand "Raise", sendcommand "Focus"
+*FvwmIconMan*action      Mouse   2 N sendcommand "Iconify 1"
+*FvwmIconMan*action      Mouse   3 N sendcommand "Menu Window-Ops"
+
+Style "tint2" !Title, !Handles, !borders, StaysOnTop, EWMHIgnoreStrutHints, Sticky, EWMHPlacementIgnoreWorkingArea, NeverFocus, WindowListSkip,

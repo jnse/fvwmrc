@@ -1,0 +1,12 @@
+*FvwmPager: Back grey60
+*FvwmPager: Fore black
+*FvwmPager: Font -adobe-helvetica-bold-r-*-*-10-*-*-*-*-*-*-*
+*FvwmPager: Hilight #c0c0c0
+*FvwmPager: Geometry -1-1
+*FvwmPager: SmallFont 5x8
+*FvwmPager: Rows 1
+*FvwmPager: Columns 4
+*FvwmPager: Label 0 Projects
+*FvwmPager: Label 1 Work
+*FvwmPager: Label 2 Maintenance
+*FvwmPager: Label 3 Misc

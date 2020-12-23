@@ -1,0 +1,11 @@
+DesktopSize 2x2
+DesktopName 0 Misc
+DesktopName 1 Projects
+DesktopName 2 Work
+DesktopName 3 Comms
+DesktopName 4 Maintenance
+
+EdgeResistance 250
+EdgeScroll 0 0
+EdgeThickness 1
+

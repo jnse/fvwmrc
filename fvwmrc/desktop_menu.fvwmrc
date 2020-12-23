@@ -1,0 +1,2311 @@
+DestroyMenu "FvwmXfce Applications"
+AddToMenu "FvwmXfce Applications" "Xfce Applications" Title
++ "Accessories" Popup "Accessories"
++ "Development" Popup "Development"
++ "Education" Popup "Education"
++ "Games" Popup "Games"
++ "Graphics" Popup "Graphics"
++ "Internet" Popup "Internet"
++ "Multimedia" Popup "Multimedia"
++ "Office" Popup "Office"
++ "Other" Popup "Other"
++ "System" Popup "System"
++ "Run Program..." Exec exec xfce4-appfinder --collapsed
++ "" Nop
++ "Terminal Emulator" Exec exec exo-open --launch TerminalEmulator
++ "File Manager" Exec exec exo-open --launch FileManager 
++ "Mail Reader" Exec exec exo-open --launch MailReader 
++ "Web Browser" Exec exec exo-open --launch WebBrowser 
++ "" Nop
++ "Settings" Popup "Settings"
++ "" Nop
++ "" Nop
++ "About Xfce" Exec exec xfce4-about
++ "Log Out" Exec exec xfce4-session-logout
+
+DestroyMenu "Accessories"
+AddToMenu "Accessories" "Accessories" Title
++ "Active@ Disk Editor" Exec exec /opt/lsoft/DiskEditor/DiskEditor.sh
++ "Application Finder" Exec exec xfce4-appfinder
++ "Ark" Exec exec ark 
++ "Bulk Rename" Exec exec /usr/lib64/Thunar/ThunarBulkRename 
++ "Clipboard Manager" Exec exec xfce4-clipman
++ "Elementary Perf" Exec exec elementary_perf
++ "Elementary Test" Exec exec elementary_test
++ "Filelight" Exec exec filelight 
++ "Frescobaldi" Exec exec frescobaldi 
++ "HP Device Manager" Exec exec hp-toolbox
++ "Help" Exec exec khelpcenter
++ "KBackup" Exec exec kbackup 
++ "KCalc" Exec exec kcalc
++ "KCharSelect" Exec exec kcharselect --qwindowtitle 
++ "KFind" Exec exec kfind 
++ "KTeaTime" Exec exec kteatime
++ "KTimer" Exec exec ktimer
++ "KWrite" Exec exec kwrite 
++ "Kate" Exec exec kate -b 
++ "KeePassXC" Exec exec keepassxc 
++ "Klipper" Exec exec klipper
++ "Okteta" Exec exec okteta 
++ "QtADB" Exec exec QtADB
++ "Sensor Viewer" Exec exec xfce4-sensors
++ "Software Token" Exec exec stoken-gui
++ "Software Token (small)" Exec exec stoken-gui --small
++ "Spectacle" Exec exec qdbus org.kde.Spectacle / StartAgent
++ "Sweeper" Exec exec sweeper
++ "Thunar File Manager" Exec exec thunar 
++ "Vim" Exec exec xterm -e vim 
+
+DestroyMenu "Development"
+AddToMenu "Development" "Development" Title
++ "Code::Blocks IDE" Exec exec codeblocks 
++ "Elementary Perf" Exec exec elementary_perf
++ "Elementary Test" Exec exec elementary_test
++ "FLUID" Exec exec fluid 
++ "Fritzing" Exec exec Fritzing
++ "GNU Radio Companion" Exec exec gnuradio-companion 
++ "KAppTemplate" Exec exec kapptemplate
++ "KDevelop" Exec exec kdevelop
++ "KDevelop (Pick Session)" Exec exec kdevelop --ps
++ "KImageMapEditor" Exec exec kimagemapeditor -qwindowtitle   
++ "Lazarus IDE" Exec exec startlazarus
++ "Nemiver" Exec exec nemiver
++ "Qt 5 Designer" Exec exec /usr/lib64/qt5/bin/designer
++ "SASM" Exec exec sasm
++ "Sourcetrail" Exec exec /opt/bin/sourcetrail
++ "pycharm-community" Exec exec pycharm-community
++ "sandbox" Exec exec xterm -e sandbox
+
+DestroyMenu "Education"
+AddToMenu "Education" "Education" Title
++ "Artikulate" Exec exec artikulate -qwindowtitle "" 
++ "Blinken" Exec exec blinken
++ "Cantor" Exec exec cantor -qwindowicon cantor -qwindowtitle  
++ "Gpredict" Exec exec gpredict
++ "KAlgebra" Exec exec kalgebra 
++ "KAlgebra Mobile" Exec exec kalgebramobile 
++ "KBruch" Exec exec kbruch -qwindowtitle  -qwindowicon kbruch
++ "KDE Marble" Exec exec marble 
++ "KGeography" Exec exec kgeography
++ "KHangMan" Exec exec khangman -qwindowtitle "" 
++ "KLettres" Exec exec klettres -qwindowtitle  -qwindowicon klettres
++ "KTouch" Exec exec ktouch
++ "KTurtle" Exec exec kturtle -qwindowtitle 
++ "KWordQuiz" Exec exec kwordquiz  -qwindowtitle  -qwindowicon kwordquiz
++ "Kalzium" Exec exec kalzium -qwindowtitle 
++ "Kanagram" Exec exec kanagram
++ "Kig" Exec exec kig  --qwindowtitle 
++ "Kiten" Exec exec kiten -qwindowtitle  -qwindowicon kiten
++ "KmPlot" Exec exec kmplot 
++ "LibreOffice Math" Exec exec libreoffice --math 
++ "Minuet" Exec exec minuet
++ "Parley" Exec exec parley 
++ "QSSTV" Exec exec qsstv
++ "Rocs" Exec exec rocs  -qwindowtitle 
++ "Step" Exec exec step -qwindowtitle  -qwindowicon step
++ "vym" Exec exec vym
+
+DestroyMenu "Games"
+AddToMenu "Games" "Games" Title
++ "Blinken" Exec exec blinken
++ "Bomber" Exec exec bomber -qwindowtitle 
++ "Bovo" Exec exec bovo -qwindowtitle 
++ "Cities: Skylines" Exec exec steam steam://rungameid/255710
++ "DOOM" Exec exec steam steam://rungameid/379720
++ "DOSBox" Exec exec dosbox
++ "Granatier" Exec exec granatier
++ "KAtomic" Exec exec katomic -qwindowtitle 
++ "KBlackBox" Exec exec kblackbox -qwindowtitle 
++ "KBlocks" Exec exec kblocks -qwindowtitle 
++ "KBounce" Exec exec kbounce -qwindowtitle 
++ "KBreakOut" Exec exec kbreakout -qwindowtitle 
++ "KDiamond" Exec exec kdiamond -qwindowtitle 
++ "KFourInLine" Exec exec kfourinline
++ "KGoldrunner" Exec exec kgoldrunner
++ "KHangMan" Exec exec khangman -qwindowtitle "" 
++ "KJumpingCube" Exec exec kjumpingcube -qwindowtitle 
++ "KMahjongg" Exec exec kmahjongg -qwindowtitle 
++ "KMines" Exec exec kmines -qwindowtitle 
++ "KNetWalk" Exec exec knetwalk -qwindowtitle 
++ "KPatience" Exec exec kpat -qwindowtitle  
++ "KReversi" Exec exec kreversi -qwindowtitle 
++ "KSnakeDuel" Exec exec ksnakeduel
++ "KSpaceDuel" Exec exec kspaceduel -qwindowtitle 
++ "KSquares" Exec exec ksquares -qwindowicon ksquares -qwindowtitle 
++ "KSudoku" Exec exec ksudoku -qwindowicon ksudoku -qwindowtitle 
++ "Kanagram" Exec exec kanagram
++ "Kapman" Exec exec kapman
++ "Kigo" Exec exec kigo  -qwindowicon kigo -qwindowtitle 
++ "Killbots" Exec exec killbots -qwindowtitle 
++ "Kiriki" Exec exec kiriki -qwindowtitle 
++ "Klickety" Exec exec klickety -qwindowtitle 
++ "Knights" Exec exec knights  -qwindowtitle 
++ "Knights and Merchants" Exec exec steam steam://rungameid/253900
++ "Kolf" Exec exec kolf 
++ "Kollision" Exec exec kollision
++ "Kolor Lines" Exec exec klines -qwindowtitle 
++ "Konquest" Exec exec konquest -qwindowtitle 
++ "KsirK" Exec exec ksirk -qwindowtitle  -qwindowicon ksirk
++ "KsirK Skin Editor" Exec exec ksirkskineditor -qwindowtitle  -qwindowicon preferences-desktop-locale
++ "Kubrick" Exec exec kubrick
++ "LSkat" Exec exec lskat
++ "Naval Battle" Exec exec knavalbattle -qwindowtitle  
++ "Palapeli" Exec exec palapeli 
++ "Potato Guy" Exec exec ktuberling -qwindowtitle  
++ "SameGame" Exec exec klickety --KSameMode -qwindowtitle 
++ "ScummVM" Exec exec scummvm
++ "Shisen-Sho" Exec exec kshisen -qwindowtitle 
++ "Sid Meier's Civilization VI" Exec exec steam steam://rungameid/289070
++ "Steam" Exec exec /usr/bin/steam 
++ "The Witcher 2: Assassins of Kings Enhanced Edition" Exec exec steam steam://rungameid/20920
++ "picmi" Exec exec picmi
+
+DestroyMenu "Graphics"
+AddToMenu "Graphics" "Graphics" Title
++ "FontForge" Exec exec fontforge 
++ "GNU Image Manipulation Program" Exec exec gimp-2.10 
++ "GQview" Exec exec gqview -r 
++ "Gwenview" Exec exec gwenview 
++ "KColorChooser" Exec exec kcolorchooser
++ "KRuler" Exec exec kruler
++ "KolourPaint" Exec exec kolourpaint 
++ "Krita" Exec exec krita 
++ "LibreOffice Draw" Exec exec libreoffice --draw 
++ "MuPDF" Exec exec mupdf 
++ "Okular" Exec exec okular 
++ "Pencil" Exec exec "/usr/bin/evoluspencil"
++ "XSane Scanner Tool" Exec exec xsane
+
+DestroyMenu "Internet"
+AddToMenu "Internet" "Internet" Title
++ "Avahi SSH Server Browser" Exec exec /usr/bin/bssh
++ "Avahi VNC Server Browser" Exec exec /usr/bin/bvnc
++ "Discord" Exec exec /opt/discord/Discord
++ "Empathy" Exec exec empathy
++ "Falkon" Exec exec falkon 
++ "FileZilla" Exec exec filezilla
++ "Flarq" Exec exec flarq
++ "Fldigi" Exec exec fldigi
++ "Flrig" Exec exec flrig
++ "Google Chrome" Exec exec /usr/bin/google-chrome-stable 
++ "Gpredict" Exec exec gpredict
++ "IM Contacts" Exec exec ktp-contactlist 
++ "KDE IM Log Viewer" Exec exec ktp-log-viewer 
++ "KGet" Exec exec kget -qwindowtitle  
++ "KRDC" Exec exec krdc -qwindowtitle  
++ "KVIrc" Exec exec kvirc -m 
++ "Kopete" Exec exec kopete -qwindowtitle  
++ "Krfb" Exec exec krfb -qwindowtitle  
++ "Mozilla Firefox" Exec exec firefox --new-window 
++ "Pidgin Internet Messenger" Exec exec pidgin
++ "QTerm" Exec exec QTerm -caption ""  
++ "Qtel" Exec exec /usr/bin/qtel
++ "Remmina" Exec exec remmina-file-wrapper 
++ "Slack" Exec exec /usr/bin/slack -s 
++ "Steam" Exec exec /usr/bin/steam 
++ "Telegram Desktop" Exec exec telegram-desktop -- 
++ "TigerVNC Viewer" Exec exec /usr/bin/vncviewer
++ "WeeChat" Exec exec xterm -e weechat 
++ "Wireshark" Exec exec wireshark 
++ "wpa_gui" Exec exec wpa_gui
+
+DestroyMenu "Multimedia"
+AddToMenu "Multimedia" "Multimedia" Title
++ "Audacity" Exec exec env UBUNTU_MENUPROXY=0 audacity 
++ "Baudline" Exec exec /usr/bin/baudline
++ "Baudline (jack support)" Exec exec /usr/bin/baudline_jack
++ "Calf Plugin Pack for JACK" Exec exec calfjackhost
++ "Cheese" Exec exec cheese
++ "Dragon Player" Exec exec dragon 
++ "Echomixer" Exec exec echomixer
++ "Elisa" Exec exec elisa 
++ "Frescobaldi" Exec exec frescobaldi 
++ "HDAJackRetask" Exec exec hdajackretask
++ "Hwmixvolume" Exec exec hwmixvolume
++ "JACK Rack" Exec exec jack-rack
++ "JAMin" Exec exec jamin
++ "JuK" Exec exec juk 
++ "K3b" Exec exec k3b 
++ "KMix" Exec exec kmix -qwindowtitle "" 
++ "Kdenlive" Exec exec kdenlive 
++ "Kwave Sound Editor" Exec exec kwave 
++ "LMMS" Exec exec lmms 
++ "Message Aggregator" Exec exec message_aggregator
++ "MuseScore 3 (3.5.0 unstable)" Exec exec mscore 
++ "OBS Studio" Exec exec obs
++ "Phonon Audio and Video" Exec exec phononsettings
++ "PulseAudio Volume Control" Exec exec pavucontrol-qt
++ "QjackCtl" Exec exec qjackctl
++ "Qsynth" Exec exec qsynth
++ "Qt V4L2 test Utility" Exec exec qv4l2
++ "Qt V4L2 video capture utility" Exec exec qvidcap
++ "Rosegarden" Exec exec rosegarden 
++ "Schism Tracker" Exec exec schismtracker 
++ "Spotify" Exec exec spotify-dbus.py 
++ "VLC media player" Exec exec /usr/bin/vlc --started-from-file 
++ "ardour6" Exec exec ardour6
++ "js8call" Exec exec js8call
++ "mpv Media Player" Exec exec mpv --player-operation-mode=pseudo-gui -- 
++ "wsjtx" Exec exec wsjtx
+
+DestroyMenu "Office"
+AddToMenu "Office" "Office" Title
++ "LibreOffice" Exec exec libreoffice 
++ "LibreOffice Base" Exec exec libreoffice --base 
++ "LibreOffice Calc" Exec exec libreoffice --calc 
++ "LibreOffice Draw" Exec exec libreoffice --draw 
++ "LibreOffice Impress" Exec exec libreoffice --impress 
++ "LibreOffice Math" Exec exec libreoffice --math 
++ "LibreOffice Writer" Exec exec libreoffice --writer 
++ "Mozilla Thunderbird" Exec exec /usr/bin/thunderbird 
++ "Okular" Exec exec okular 
++ "XMind" Exec exec xmind
+
+DestroyMenu "Other"
+AddToMenu "Other" "Other" Title
++ "4nec2" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/ProgramData/Microsoft/Windows/Start\\ Menu/Programs/4nec2/4nec2.lnk
++ "4nec2 help" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/ProgramData/Microsoft/Windows/Start\\ Menu/Programs/4nec2/4nec2\\ help.lnk
++ "4nec2 on the Web" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/ProgramData/Microsoft/Windows/Start\\ Menu/Programs/4nec2/4nec2\\ on\\ the\\ Web.lnk
++ "Autosaved files" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/users/johns/Start\\ Menu/Programs/MixW/Autosaved\\ files.lnk
++ "Browse C: Drive" Exec exec xdg-open .wine/dosdevices/c:
++ "Browse MixW folder" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/users/johns/Start\\ Menu/Programs/MixW/Browse\\ MixW\\ folder.lnk
++ "Build" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/ProgramData/Microsoft/Windows/Start\\ Menu/Programs/4nec2/Build.lnk
++ "Build help" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/ProgramData/Microsoft/Windows/Start\\ Menu/Programs/4nec2/Build\\ help.lnk
++ "CLOCK" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/ProgramData/Microsoft/Windows/Start\\ Menu/Programs/MULTIPSK/CLOCK.lnk
++ "CS-9700" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/ProgramData/Microsoft/Windows/Start\\ Menu/Programs/CS-9700/CS-9700.lnk
++ "CS-9700 Initial Setup" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/ProgramData/Microsoft/Windows/Start\\ Menu/Programs/CS-9700/CS-9700\\ Initial\\ Setup.lnk
++ "Cisco Anyconnect Secure Mobility Client" Exec exec /opt/cisco/anyconnect/bin/vpnui
++ "Configure DXGL" Exec exec env KAM_WINEPREFIX="/home/johns/.local/share/Steam/steamapps/common/Knights and Merchants Historical Version/Wine/prefix/.config" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.local/share/Steam/steamapps/common/Knights\\ and\\ Merchants\\ Historical\\ Version/Wine/prefix/.config/dosdevices/c:/users/johns/Start\\ Menu/Programs/DXGL/Configure\\ DXGL.lnk
++ "Configure Wine" Exec exec winecfg
++ "DXGL Help" Exec exec env KAM_WINEPREFIX="/home/johns/.local/share/Steam/steamapps/common/Knights and Merchants Historical Version/Wine/prefix/.config" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.local/share/Steam/steamapps/common/Knights\\ and\\ Merchants\\ Historical\\ Version/Wine/prefix/.config/dosdevices/c:/users/johns/Start\\ Menu/Programs/DXGL/DXGL\\ Help.lnk
++ "DXGL Test" Exec exec env KAM_WINEPREFIX="/home/johns/.local/share/Steam/steamapps/common/Knights and Merchants Historical Version/Wine/prefix/.config" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.local/share/Steam/steamapps/common/Knights\\ and\\ Merchants\\ Historical\\ Version/Wine/prefix/.config/dosdevices/c:/users/johns/Start\\ Menu/Programs/DXGL/DXGL\\ Test.lnk
++ "Dire Wolf" Exec exec xterm -hold -title "Dire Wolf" -bg white -e "/usr/localusr//bin/direwolf"
++ "GRig" Exec exec grig
++ "Getting Started" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/ProgramData/Microsoft/Windows/Start\\ Menu/Programs/4nec2/Getting\\ Started.lnk
++ "Help file" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/users/johns/Start\\ Menu/Programs/MixW/Help\\ file.lnk
++ "Help for CS-9700" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/ProgramData/Microsoft/Windows/Start\\ Menu/Programs/CS-9700/Help\\ for\\ CS-9700.lnk
++ "License agreement" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/users/johns/Start\\ Menu/Programs/MixW/License\\ agreement.lnk
++ "MULTIPSK" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/ProgramData/Microsoft/Windows/Start\\ Menu/Programs/MULTIPSK/MULTIPSK.lnk
++ "Mathematica 12" Exec exec /usr/local/Wolfram/Mathematica/12.1/Executables/Mathematica 
++ "MixW 3.2" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/users/johns/Start\\ Menu/Programs/MixW/MixW\\ 3.2.lnk
++ "MixW 3.2 - dual channel version" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/users/johns/Start\\ Menu/Programs/MixW/MixW\\ 3.2\\ -\\ dual\\ channel\\ version.lnk
++ "MixW home page" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/users/johns/Start\\ Menu/Programs/MixW/MixW\\ home\\ page.lnk
++ "NecLab" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/users/johns/Start\\ Menu/Programs/NecLab/NecLab.lnk
++ "Notepad" Exec exec notepad
++ "Read Me first" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/ProgramData/Microsoft/Windows/Start\\ Menu/Programs/4nec2/Read\\ Me\\ first.lnk
++ "Third-party Credits" Exec exec env KAM_WINEPREFIX="/home/johns/.local/share/Steam/steamapps/common/Knights and Merchants Historical Version/Wine/prefix/.config" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.local/share/Steam/steamapps/common/Knights\\ and\\ Merchants\\ Historical\\ Version/Wine/prefix/.config/dosdevices/c:/users/johns/Start\\ Menu/Programs/DXGL/Third-party\\ Credits.lnk
++ "Uninstall" Exec exec env KAM_WINEPREFIX="/home/johns/.local/share/Steam/steamapps/common/Knights and Merchants Historical Version/Wine/prefix/.config" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.local/share/Steam/steamapps/common/Knights\\ and\\ Merchants\\ Historical\\ Version/Wine/prefix/.config/dosdevices/c:/users/johns/Start\\ Menu/Programs/DXGL/Uninstall.lnk
++ "Uninstall 4nec2" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/ProgramData/Microsoft/Windows/Start\\ Menu/Programs/4nec2/Uninstall\\ 4nec2.lnk
++ "Uninstall Wine Software" Exec exec wine uninstaller
++ "Version history" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/users/johns/Start\\ Menu/Programs/MixW/Version\\ history.lnk
++ "View" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/ProgramData/Microsoft/Windows/Start\\ Menu/Programs/4nec2/View.lnk
++ "View help" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/ProgramData/Microsoft/Windows/Start\\ Menu/Programs/4nec2/View\\ help.lnk
++ "Website" Exec exec env KAM_WINEPREFIX="/home/johns/.local/share/Steam/steamapps/common/Knights and Merchants Historical Version/Wine/prefix/.config" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.local/share/Steam/steamapps/common/Knights\\ and\\ Merchants\\ Historical\\ Version/Wine/prefix/.config/dosdevices/c:/users/johns/Start\\ Menu/Programs/DXGL/Website.lnk
++ "boinc" Exec exec boincmgr
++ "hp-uiscan" Exec exec /usr/bin/hp-uiscan
+
+DestroyMenu "System"
+AddToMenu "System" "System" Title
++ "Bulk Rename" Exec exec /usr/lib64/Thunar/ThunarBulkRename 
++ "Cool Retro Term" Exec exec cool-retro-term
++ "DOSBox" Exec exec dosbox
++ "Disk Usage Analyzer" Exec exec baobab
++ "Dolphin" Exec exec dolphin 
++ "GKrellM" Exec exec gkrellm
++ "Hardware Lister" Exec exec /usr/sbin/gtk-lshw
++ "Htop" Exec exec xterm -e htop
++ "Info Center" Exec exec kinfocenter
++ "KDiskFree" Exec exec kdf -qwindowtitle 
++ "KSysGuard" Exec exec ksysguard 
++ "KSystemLog" Exec exec ksystemlog -qwindowtitle 
++ "KWalletManager" Exec exec kwalletmanager5 
++ "Konsole" Exec exec konsole
++ "KwikDisk" Exec exec kwikdisk -qwindowtitle 
++ "Manage Printing" Exec exec /usr/bin/xdg-open http://localhost:631/
++ "NVIDIA X Server Settings" Exec exec /usr/bin/nvidia-settings
++ "Oracle VM VirtualBox" Exec exec VirtualBox 
++ "Print Settings" Exec exec system-config-printer
++ "Sensor Viewer" Exec exec xfce4-sensors
++ "Terminology" Exec exec terminology
++ "Thunar File Manager" Exec exec thunar 
++ "Tint2" Exec exec tint2
++ "USB Viewer" Exec exec usbview
++ "UXTerm" Exec exec uxterm
++ "VMware Player" Exec exec /usr/bin/vmplayer 
++ "WoeUSB" Exec exec woeusbgui
++ "XTerm" Exec exec xterm
++ "Xfce Terminal" Exec exec xfce4-terminal
++ "Yakuake" Exec exec yakuake
++ "ranger" Exec exec xterm -e ranger
++ "rxvt-unicode" Exec exec urxvt
+
+DestroyMenu "Settings"
+AddToMenu "Settings" "Settings" Title
++ "ARandR" Exec exec arandr
++ "Accessibility" Exec exec xfce4-accessibility-settings
++ "Advanced Network Configuration" Exec exec nm-connection-editor
++ "Appearance" Exec exec xfce4-appearance-settings
++ "Clipboard Manager Settings" Exec exec xfce4-clipman-settings
++ "Desktop" Exec exec xfdesktop-settings
++ "Display" Exec exec xfce4-display-settings
++ "Elementary Configuration" Exec exec elementary_config
++ "File Manager Settings" Exec exec thunar-settings
++ "KDE System Settings" Exec exec systemsettings5
++ "Keyboard" Exec exec xfce4-keyboard-settings
++ "MIME Type Editor" Exec exec xfce4-mime-settings
++ "Monitor Settings" Exec exec lxrandr
++ "Mouse and Touchpad" Exec exec xfce4-mouse-settings
++ "NVIDIA X Server Settings" Exec exec /usr/bin/nvidia-settings
++ "Notifications" Exec exec xfce4-notifyd-config
++ "Panel" Exec exec xfce4-panel --preferences
++ "Power Manager" Exec exec xfce4-power-manager-settings
++ "Preferred Applications" Exec exec exo-preferred-applications
++ "Print Settings" Exec exec system-config-printer
++ "Removable Drives and Media" Exec exec thunar-volman-settings
++ "Screensaver" Exec exec xscreensaver-demo
++ "Session and Startup" Exec exec xfce4-session-settings
++ "Settings Editor" Exec exec xfce4-settings-editor
++ "System Settings" Exec exec systemsettings5
++ "Tint2 Settings" Exec exec tint2conf
++ "Window Manager" Exec exec xfwm4-settings
++ "Window Manager Tweaks" Exec exec xfwm4-tweaks-settings
++ "Workspaces" Exec exec xfwm4-workspace-settings
++ "Xfce Terminal" Exec exec xfce4-terminal --preferences
++ "Settings Manager" Exec exec xfce4-settings-manager
++ "" Nop
++ "ARandR" Exec exec arandr
++ "Accessibility" Exec exec xfce4-accessibility-settings
++ "Advanced Network Configuration" Exec exec nm-connection-editor
++ "Appearance" Exec exec xfce4-appearance-settings
++ "Clipboard Manager Settings" Exec exec xfce4-clipman-settings
++ "Desktop" Exec exec xfdesktop-settings
++ "Display" Exec exec xfce4-display-settings
++ "Elementary Configuration" Exec exec elementary_config
++ "File Manager Settings" Exec exec thunar-settings
++ "KDE System Settings" Exec exec systemsettings5
++ "Keyboard" Exec exec xfce4-keyboard-settings
++ "MIME Type Editor" Exec exec xfce4-mime-settings
++ "Monitor Settings" Exec exec lxrandr
++ "Mouse and Touchpad" Exec exec xfce4-mouse-settings
++ "NVIDIA X Server Settings" Exec exec /usr/bin/nvidia-settings
++ "Notifications" Exec exec xfce4-notifyd-config
++ "Panel" Exec exec xfce4-panel --preferences
++ "Power Manager" Exec exec xfce4-power-manager-settings
++ "Preferred Applications" Exec exec exo-preferred-applications
++ "Print Settings" Exec exec system-config-printer
++ "Removable Drives and Media" Exec exec thunar-volman-settings
++ "Screensaver" Exec exec xscreensaver-demo
++ "Session and Startup" Exec exec xfce4-session-settings
++ "Settings Editor" Exec exec xfce4-settings-editor
++ "System Settings" Exec exec systemsettings5
++ "Tint2 Settings" Exec exec tint2conf
++ "Window Manager" Exec exec xfwm4-settings
++ "Window Manager Tweaks" Exec exec xfwm4-tweaks-settings
++ "Workspaces" Exec exec xfwm4-workspace-settings
++ "Xfce Terminal" Exec exec xfce4-terminal --preferences
+
+DestroyMenu "FvwmKf5 Applications"
+AddToMenu "FvwmKf5 Applications" "Kf5 Applications" Title
++ "Development" Popup "Development"
++ "Education" Popup "Education"
++ "Games" Popup "Games"
++ "Graphics" Popup "Graphics"
++ "Internet" Popup "Internet"
++ "Multimedia" Popup "Multimedia"
++ "Office" Popup "Office"
++ "Science && Math" Popup "Science & Math"
++ "Settings" Popup "Settings"
++ "System" Popup "System"
++ "Utilities" Popup "Utilities"
++ "Help" Exec exec khelpcenter
++ "Development" Popup "Development"
++ "Education" Popup "Education"
++ "Games" Popup "Games"
++ "Graphics" Popup "Graphics"
++ "Internet" Popup "Internet"
++ "Multimedia" Popup "Multimedia"
++ "Office" Popup "Office"
++ "Science && Math" Popup "Science & Math"
++ "Settings" Popup "Settings"
++ "System" Popup "System"
++ "Utilities" Popup "Utilities"
++ "Lost && Found" Popup "Lost & Found"
++ "Help" Exec exec khelpcenter
+
+DestroyMenu "Development"
+AddToMenu "Development" "Development" Title
++ "Web Development" Popup "Development/Web Development"
++ "Code::Blocks IDE" Exec exec codeblocks 
++ "Elementary Perf" Exec exec elementary_perf
++ "Elementary Test" Exec exec elementary_test
++ "FLUID" Exec exec fluid 
++ "Fritzing" Exec exec Fritzing
++ "GNU Radio Companion" Exec exec gnuradio-companion 
++ "KAppTemplate" Exec exec kapptemplate
++ "KDevelop" Exec exec kdevelop
++ "KDevelop (Pick Session)" Exec exec kdevelop --ps
++ "Lazarus IDE" Exec exec startlazarus
++ "Nemiver" Exec exec nemiver
++ "Qt 5 Designer" Exec exec /usr/lib64/qt5/bin/designer
++ "SASM" Exec exec sasm
++ "Sourcetrail" Exec exec /opt/bin/sourcetrail
++ "pycharm-community" Exec exec pycharm-community
++ "sandbox" Exec exec xterm -e sandbox
++ "Web Development" Popup "Development/Web Development"
++ "Code::Blocks IDE" Exec exec codeblocks 
++ "Elementary Perf" Exec exec elementary_perf
++ "Elementary Test" Exec exec elementary_test
++ "FLUID" Exec exec fluid 
++ "Fritzing" Exec exec Fritzing
++ "GNU Radio Companion" Exec exec gnuradio-companion 
++ "KAppTemplate" Exec exec kapptemplate
++ "KDevelop" Exec exec kdevelop
++ "KDevelop (Pick Session)" Exec exec kdevelop --ps
++ "Lazarus IDE" Exec exec startlazarus
++ "Nemiver" Exec exec nemiver
++ "Qt 5 Designer" Exec exec /usr/lib64/qt5/bin/designer
++ "SASM" Exec exec sasm
++ "Sourcetrail" Exec exec /opt/bin/sourcetrail
++ "pycharm-community" Exec exec pycharm-community
++ "sandbox" Exec exec xterm -e sandbox
+
+DestroyMenu "Development/Web Development"
+AddToMenu "Development/Web Development" "Development/Web Development" Title
++ "KImageMapEditor" Exec exec kimagemapeditor -qwindowtitle   
++ "KImageMapEditor" Exec exec kimagemapeditor -qwindowtitle   
+
+DestroyMenu "Development/Web Development"
+AddToMenu "Development/Web Development" "Development/Web Development" Title
++ "KImageMapEditor" Exec exec kimagemapeditor -qwindowtitle   
++ "KImageMapEditor" Exec exec kimagemapeditor -qwindowtitle   
+
+DestroyMenu "Education"
+AddToMenu "Education" "Education" Title
++ "Languages" Popup "Education/Languages"
++ "Mathematics" Popup "Education/Mathematics"
++ "Miscellaneous" Popup "Education/Miscellaneous"
++ "Science" Popup "Education/Science"
++ "Languages" Popup "Education/Languages"
++ "Mathematics" Popup "Education/Mathematics"
++ "Miscellaneous" Popup "Education/Miscellaneous"
++ "Science" Popup "Education/Science"
+
+DestroyMenu "Education/Languages"
+AddToMenu "Education/Languages" "Education/Languages" Title
++ "Artikulate" Exec exec artikulate -qwindowtitle "" 
++ "KHangMan" Exec exec khangman -qwindowtitle "" 
++ "KLettres" Exec exec klettres -qwindowtitle  -qwindowicon klettres
++ "KWordQuiz" Exec exec kwordquiz  -qwindowtitle  -qwindowicon kwordquiz
++ "Kanagram" Exec exec kanagram
++ "Kiten" Exec exec kiten -qwindowtitle  -qwindowicon kiten
++ "Parley" Exec exec parley 
++ "Artikulate" Exec exec artikulate -qwindowtitle "" 
++ "KHangMan" Exec exec khangman -qwindowtitle "" 
++ "KLettres" Exec exec klettres -qwindowtitle  -qwindowicon klettres
++ "KWordQuiz" Exec exec kwordquiz  -qwindowtitle  -qwindowicon kwordquiz
++ "Kanagram" Exec exec kanagram
++ "Kiten" Exec exec kiten -qwindowtitle  -qwindowicon kiten
++ "Parley" Exec exec parley 
+
+DestroyMenu "Education/Mathematics"
+AddToMenu "Education/Mathematics" "Education/Mathematics" Title
++ "Cantor" Exec exec cantor -qwindowicon cantor -qwindowtitle  
++ "KAlgebra" Exec exec kalgebra 
++ "KAlgebra Mobile" Exec exec kalgebramobile 
++ "KBruch" Exec exec kbruch -qwindowtitle  -qwindowicon kbruch
++ "Kig" Exec exec kig  --qwindowtitle 
++ "KmPlot" Exec exec kmplot 
++ "LibreOffice Math" Exec exec libreoffice --math 
++ "Rocs" Exec exec rocs  -qwindowtitle 
++ "Cantor" Exec exec cantor -qwindowicon cantor -qwindowtitle  
++ "KAlgebra" Exec exec kalgebra 
++ "KAlgebra Mobile" Exec exec kalgebramobile 
++ "KBruch" Exec exec kbruch -qwindowtitle  -qwindowicon kbruch
++ "Kig" Exec exec kig  --qwindowtitle 
++ "KmPlot" Exec exec kmplot 
++ "LibreOffice Math" Exec exec libreoffice --math 
++ "Rocs" Exec exec rocs  -qwindowtitle 
+
+DestroyMenu "Education/Miscellaneous"
+AddToMenu "Education/Miscellaneous" "Education/Miscellaneous" Title
++ "Blinken" Exec exec blinken
++ "KGeography" Exec exec kgeography
++ "KTouch" Exec exec ktouch
++ "KTurtle" Exec exec kturtle -qwindowtitle 
++ "Minuet" Exec exec minuet
++ "QSSTV" Exec exec qsstv
++ "Step" Exec exec step -qwindowtitle  -qwindowicon step
++ "vym" Exec exec vym
++ "Blinken" Exec exec blinken
++ "KGeography" Exec exec kgeography
++ "KTouch" Exec exec ktouch
++ "KTurtle" Exec exec kturtle -qwindowtitle 
++ "Minuet" Exec exec minuet
++ "QSSTV" Exec exec qsstv
++ "Step" Exec exec step -qwindowtitle  -qwindowicon step
++ "vym" Exec exec vym
+
+DestroyMenu "Education/Science"
+AddToMenu "Education/Science" "Education/Science" Title
++ "Cantor" Exec exec cantor -qwindowicon cantor -qwindowtitle  
++ "Gpredict" Exec exec gpredict
++ "KAlgebra" Exec exec kalgebra 
++ "KAlgebra Mobile" Exec exec kalgebramobile 
++ "KDE Marble" Exec exec marble 
++ "Kalzium" Exec exec kalzium -qwindowtitle 
++ "LibreOffice Math" Exec exec libreoffice --math 
++ "Rocs" Exec exec rocs  -qwindowtitle 
++ "Cantor" Exec exec cantor -qwindowicon cantor -qwindowtitle  
++ "Gpredict" Exec exec gpredict
++ "KAlgebra" Exec exec kalgebra 
++ "KAlgebra Mobile" Exec exec kalgebramobile 
++ "KDE Marble" Exec exec marble 
++ "Kalzium" Exec exec kalzium -qwindowtitle 
++ "LibreOffice Math" Exec exec libreoffice --math 
++ "Rocs" Exec exec rocs  -qwindowtitle 
+
+DestroyMenu "Education/Languages"
+AddToMenu "Education/Languages" "Education/Languages" Title
++ "Artikulate" Exec exec artikulate -qwindowtitle "" 
++ "KHangMan" Exec exec khangman -qwindowtitle "" 
++ "KLettres" Exec exec klettres -qwindowtitle  -qwindowicon klettres
++ "KWordQuiz" Exec exec kwordquiz  -qwindowtitle  -qwindowicon kwordquiz
++ "Kanagram" Exec exec kanagram
++ "Kiten" Exec exec kiten -qwindowtitle  -qwindowicon kiten
++ "Parley" Exec exec parley 
++ "Artikulate" Exec exec artikulate -qwindowtitle "" 
++ "KHangMan" Exec exec khangman -qwindowtitle "" 
++ "KLettres" Exec exec klettres -qwindowtitle  -qwindowicon klettres
++ "KWordQuiz" Exec exec kwordquiz  -qwindowtitle  -qwindowicon kwordquiz
++ "Kanagram" Exec exec kanagram
++ "Kiten" Exec exec kiten -qwindowtitle  -qwindowicon kiten
++ "Parley" Exec exec parley 
+
+DestroyMenu "Education/Mathematics"
+AddToMenu "Education/Mathematics" "Education/Mathematics" Title
++ "Cantor" Exec exec cantor -qwindowicon cantor -qwindowtitle  
++ "KAlgebra" Exec exec kalgebra 
++ "KAlgebra Mobile" Exec exec kalgebramobile 
++ "KBruch" Exec exec kbruch -qwindowtitle  -qwindowicon kbruch
++ "Kig" Exec exec kig  --qwindowtitle 
++ "KmPlot" Exec exec kmplot 
++ "LibreOffice Math" Exec exec libreoffice --math 
++ "Rocs" Exec exec rocs  -qwindowtitle 
++ "Cantor" Exec exec cantor -qwindowicon cantor -qwindowtitle  
++ "KAlgebra" Exec exec kalgebra 
++ "KAlgebra Mobile" Exec exec kalgebramobile 
++ "KBruch" Exec exec kbruch -qwindowtitle  -qwindowicon kbruch
++ "Kig" Exec exec kig  --qwindowtitle 
++ "KmPlot" Exec exec kmplot 
++ "LibreOffice Math" Exec exec libreoffice --math 
++ "Rocs" Exec exec rocs  -qwindowtitle 
+
+DestroyMenu "Education/Miscellaneous"
+AddToMenu "Education/Miscellaneous" "Education/Miscellaneous" Title
++ "Blinken" Exec exec blinken
++ "KGeography" Exec exec kgeography
++ "KTouch" Exec exec ktouch
++ "KTurtle" Exec exec kturtle -qwindowtitle 
++ "Minuet" Exec exec minuet
++ "QSSTV" Exec exec qsstv
++ "Step" Exec exec step -qwindowtitle  -qwindowicon step
++ "vym" Exec exec vym
++ "Blinken" Exec exec blinken
++ "KGeography" Exec exec kgeography
++ "KTouch" Exec exec ktouch
++ "KTurtle" Exec exec kturtle -qwindowtitle 
++ "Minuet" Exec exec minuet
++ "QSSTV" Exec exec qsstv
++ "Step" Exec exec step -qwindowtitle  -qwindowicon step
++ "vym" Exec exec vym
+
+DestroyMenu "Education/Science"
+AddToMenu "Education/Science" "Education/Science" Title
++ "Cantor" Exec exec cantor -qwindowicon cantor -qwindowtitle  
++ "Gpredict" Exec exec gpredict
++ "KAlgebra" Exec exec kalgebra 
++ "KAlgebra Mobile" Exec exec kalgebramobile 
++ "KDE Marble" Exec exec marble 
++ "Kalzium" Exec exec kalzium -qwindowtitle 
++ "LibreOffice Math" Exec exec libreoffice --math 
++ "Rocs" Exec exec rocs  -qwindowtitle 
++ "Cantor" Exec exec cantor -qwindowicon cantor -qwindowtitle  
++ "Gpredict" Exec exec gpredict
++ "KAlgebra" Exec exec kalgebra 
++ "KAlgebra Mobile" Exec exec kalgebramobile 
++ "KDE Marble" Exec exec marble 
++ "Kalzium" Exec exec kalzium -qwindowtitle 
++ "LibreOffice Math" Exec exec libreoffice --math 
++ "Rocs" Exec exec rocs  -qwindowtitle 
+
+DestroyMenu "Games"
+AddToMenu "Games" "Games" Title
++ "Arcade" Popup "Games/Arcade"
++ "Board Games" Popup "Games/Board Games"
++ "Card Games" Popup "Games/Card Games"
++ "Games for Kids" Popup "Games/Games for Kids"
++ "Logic Games" Popup "Games/Logic Games"
++ "Tactics && Strategy" Popup "Games/Tactics & Strategy"
++ "Cities: Skylines" Exec exec steam steam://rungameid/255710
++ "DOOM" Exec exec steam steam://rungameid/379720
++ "DOSBox" Exec exec dosbox
++ "Knights and Merchants" Exec exec steam steam://rungameid/253900
++ "ScummVM" Exec exec scummvm
++ "Sid Meier's Civilization VI" Exec exec steam steam://rungameid/289070
++ "Steam" Exec exec /usr/bin/steam 
++ "The Witcher 2: Assassins of Kings Enhanced Edition" Exec exec steam steam://rungameid/20920
++ "Arcade" Popup "Games/Arcade"
++ "Board Games" Popup "Games/Board Games"
++ "Card Games" Popup "Games/Card Games"
++ "Games for Kids" Popup "Games/Games for Kids"
++ "Logic Games" Popup "Games/Logic Games"
++ "Tactics && Strategy" Popup "Games/Tactics & Strategy"
++ "Cities: Skylines" Exec exec steam steam://rungameid/255710
++ "DOOM" Exec exec steam steam://rungameid/379720
++ "DOSBox" Exec exec dosbox
++ "Knights and Merchants" Exec exec steam steam://rungameid/253900
++ "ScummVM" Exec exec scummvm
++ "Sid Meier's Civilization VI" Exec exec steam steam://rungameid/289070
++ "Steam" Exec exec /usr/bin/steam 
++ "The Witcher 2: Assassins of Kings Enhanced Edition" Exec exec steam steam://rungameid/20920
+
+DestroyMenu "Games/Arcade"
+AddToMenu "Games/Arcade" "Games/Arcade" Title
++ "Bomber" Exec exec bomber -qwindowtitle 
++ "Granatier" Exec exec granatier
++ "KBlocks" Exec exec kblocks -qwindowtitle 
++ "KBounce" Exec exec kbounce -qwindowtitle 
++ "KBreakOut" Exec exec kbreakout -qwindowtitle 
++ "KGoldrunner" Exec exec kgoldrunner
++ "KSnakeDuel" Exec exec ksnakeduel
++ "KSpaceDuel" Exec exec kspaceduel -qwindowtitle 
++ "Kapman" Exec exec kapman
++ "Kolf" Exec exec kolf 
++ "Kollision" Exec exec kollision
++ "Bomber" Exec exec bomber -qwindowtitle 
++ "Granatier" Exec exec granatier
++ "KBlocks" Exec exec kblocks -qwindowtitle 
++ "KBounce" Exec exec kbounce -qwindowtitle 
++ "KBreakOut" Exec exec kbreakout -qwindowtitle 
++ "KGoldrunner" Exec exec kgoldrunner
++ "KSnakeDuel" Exec exec ksnakeduel
++ "KSpaceDuel" Exec exec kspaceduel -qwindowtitle 
++ "Kapman" Exec exec kapman
++ "Kolf" Exec exec kolf 
++ "Kollision" Exec exec kollision
+
+DestroyMenu "Games/Board Games"
+AddToMenu "Games/Board Games" "Games/Board Games" Title
++ "Bovo" Exec exec bovo -qwindowtitle 
++ "KBlackBox" Exec exec kblackbox -qwindowtitle 
++ "KFourInLine" Exec exec kfourinline
++ "KMahjongg" Exec exec kmahjongg -qwindowtitle 
++ "KReversi" Exec exec kreversi -qwindowtitle 
++ "KSquares" Exec exec ksquares -qwindowicon ksquares -qwindowtitle 
++ "Kigo" Exec exec kigo  -qwindowicon kigo -qwindowtitle 
++ "Kiriki" Exec exec kiriki -qwindowtitle 
++ "Knights" Exec exec knights  -qwindowtitle 
++ "Shisen-Sho" Exec exec kshisen -qwindowtitle 
++ "Bovo" Exec exec bovo -qwindowtitle 
++ "KBlackBox" Exec exec kblackbox -qwindowtitle 
++ "KFourInLine" Exec exec kfourinline
++ "KMahjongg" Exec exec kmahjongg -qwindowtitle 
++ "KReversi" Exec exec kreversi -qwindowtitle 
++ "KSquares" Exec exec ksquares -qwindowicon ksquares -qwindowtitle 
++ "Kigo" Exec exec kigo  -qwindowicon kigo -qwindowtitle 
++ "Kiriki" Exec exec kiriki -qwindowtitle 
++ "Knights" Exec exec knights  -qwindowtitle 
++ "Shisen-Sho" Exec exec kshisen -qwindowtitle 
+
+DestroyMenu "Games/Card Games"
+AddToMenu "Games/Card Games" "Games/Card Games" Title
++ "KPatience" Exec exec kpat -qwindowtitle  
++ "LSkat" Exec exec lskat
++ "KPatience" Exec exec kpat -qwindowtitle  
++ "LSkat" Exec exec lskat
+
+DestroyMenu "Games/Games for Kids"
+AddToMenu "Games/Games for Kids" "Games/Games for Kids" Title
++ "Blinken" Exec exec blinken
++ "KHangMan" Exec exec khangman -qwindowtitle "" 
++ "Kanagram" Exec exec kanagram
++ "Potato Guy" Exec exec ktuberling -qwindowtitle  
++ "Blinken" Exec exec blinken
++ "KHangMan" Exec exec khangman -qwindowtitle "" 
++ "Kanagram" Exec exec kanagram
++ "Potato Guy" Exec exec ktuberling -qwindowtitle  
+
+DestroyMenu "Games/Logic Games"
+AddToMenu "Games/Logic Games" "Games/Logic Games" Title
++ "KDiamond" Exec exec kdiamond -qwindowtitle 
++ "KSudoku" Exec exec ksudoku -qwindowicon ksudoku -qwindowtitle 
++ "Kubrick" Exec exec kubrick
++ "Palapeli" Exec exec palapeli 
++ "picmi" Exec exec picmi
++ "KDiamond" Exec exec kdiamond -qwindowtitle 
++ "KSudoku" Exec exec ksudoku -qwindowicon ksudoku -qwindowtitle 
++ "Kubrick" Exec exec kubrick
++ "Palapeli" Exec exec palapeli 
++ "picmi" Exec exec picmi
+
+DestroyMenu "Games/Tactics & Strategy"
+AddToMenu "Games/Tactics & Strategy" "Games/Tactics & Strategy" Title
++ "KAtomic" Exec exec katomic -qwindowtitle 
++ "KJumpingCube" Exec exec kjumpingcube -qwindowtitle 
++ "KMines" Exec exec kmines -qwindowtitle 
++ "KNetWalk" Exec exec knetwalk -qwindowtitle 
++ "Killbots" Exec exec killbots -qwindowtitle 
++ "Klickety" Exec exec klickety -qwindowtitle 
++ "Kolor Lines" Exec exec klines -qwindowtitle 
++ "Konquest" Exec exec konquest -qwindowtitle 
++ "KsirK" Exec exec ksirk -qwindowtitle  -qwindowicon ksirk
++ "KsirK Skin Editor" Exec exec ksirkskineditor -qwindowtitle  -qwindowicon preferences-desktop-locale
++ "Naval Battle" Exec exec knavalbattle -qwindowtitle  
++ "SameGame" Exec exec klickety --KSameMode -qwindowtitle 
++ "KAtomic" Exec exec katomic -qwindowtitle 
++ "KJumpingCube" Exec exec kjumpingcube -qwindowtitle 
++ "KMines" Exec exec kmines -qwindowtitle 
++ "KNetWalk" Exec exec knetwalk -qwindowtitle 
++ "Killbots" Exec exec killbots -qwindowtitle 
++ "Klickety" Exec exec klickety -qwindowtitle 
++ "Kolor Lines" Exec exec klines -qwindowtitle 
++ "Konquest" Exec exec konquest -qwindowtitle 
++ "KsirK" Exec exec ksirk -qwindowtitle  -qwindowicon ksirk
++ "KsirK Skin Editor" Exec exec ksirkskineditor -qwindowtitle  -qwindowicon preferences-desktop-locale
++ "Naval Battle" Exec exec knavalbattle -qwindowtitle  
++ "SameGame" Exec exec klickety --KSameMode -qwindowtitle 
+
+DestroyMenu "Games/Arcade"
+AddToMenu "Games/Arcade" "Games/Arcade" Title
++ "Bomber" Exec exec bomber -qwindowtitle 
++ "Granatier" Exec exec granatier
++ "KBlocks" Exec exec kblocks -qwindowtitle 
++ "KBounce" Exec exec kbounce -qwindowtitle 
++ "KBreakOut" Exec exec kbreakout -qwindowtitle 
++ "KGoldrunner" Exec exec kgoldrunner
++ "KSnakeDuel" Exec exec ksnakeduel
++ "KSpaceDuel" Exec exec kspaceduel -qwindowtitle 
++ "Kapman" Exec exec kapman
++ "Kolf" Exec exec kolf 
++ "Kollision" Exec exec kollision
++ "Bomber" Exec exec bomber -qwindowtitle 
++ "Granatier" Exec exec granatier
++ "KBlocks" Exec exec kblocks -qwindowtitle 
++ "KBounce" Exec exec kbounce -qwindowtitle 
++ "KBreakOut" Exec exec kbreakout -qwindowtitle 
++ "KGoldrunner" Exec exec kgoldrunner
++ "KSnakeDuel" Exec exec ksnakeduel
++ "KSpaceDuel" Exec exec kspaceduel -qwindowtitle 
++ "Kapman" Exec exec kapman
++ "Kolf" Exec exec kolf 
++ "Kollision" Exec exec kollision
+
+DestroyMenu "Games/Board Games"
+AddToMenu "Games/Board Games" "Games/Board Games" Title
++ "Bovo" Exec exec bovo -qwindowtitle 
++ "KBlackBox" Exec exec kblackbox -qwindowtitle 
++ "KFourInLine" Exec exec kfourinline
++ "KMahjongg" Exec exec kmahjongg -qwindowtitle 
++ "KReversi" Exec exec kreversi -qwindowtitle 
++ "KSquares" Exec exec ksquares -qwindowicon ksquares -qwindowtitle 
++ "Kigo" Exec exec kigo  -qwindowicon kigo -qwindowtitle 
++ "Kiriki" Exec exec kiriki -qwindowtitle 
++ "Knights" Exec exec knights  -qwindowtitle 
++ "Shisen-Sho" Exec exec kshisen -qwindowtitle 
++ "Bovo" Exec exec bovo -qwindowtitle 
++ "KBlackBox" Exec exec kblackbox -qwindowtitle 
++ "KFourInLine" Exec exec kfourinline
++ "KMahjongg" Exec exec kmahjongg -qwindowtitle 
++ "KReversi" Exec exec kreversi -qwindowtitle 
++ "KSquares" Exec exec ksquares -qwindowicon ksquares -qwindowtitle 
++ "Kigo" Exec exec kigo  -qwindowicon kigo -qwindowtitle 
++ "Kiriki" Exec exec kiriki -qwindowtitle 
++ "Knights" Exec exec knights  -qwindowtitle 
++ "Shisen-Sho" Exec exec kshisen -qwindowtitle 
+
+DestroyMenu "Games/Card Games"
+AddToMenu "Games/Card Games" "Games/Card Games" Title
++ "KPatience" Exec exec kpat -qwindowtitle  
++ "LSkat" Exec exec lskat
++ "KPatience" Exec exec kpat -qwindowtitle  
++ "LSkat" Exec exec lskat
+
+DestroyMenu "Games/Games for Kids"
+AddToMenu "Games/Games for Kids" "Games/Games for Kids" Title
++ "Blinken" Exec exec blinken
++ "KHangMan" Exec exec khangman -qwindowtitle "" 
++ "Kanagram" Exec exec kanagram
++ "Potato Guy" Exec exec ktuberling -qwindowtitle  
++ "Blinken" Exec exec blinken
++ "KHangMan" Exec exec khangman -qwindowtitle "" 
++ "Kanagram" Exec exec kanagram
++ "Potato Guy" Exec exec ktuberling -qwindowtitle  
+
+DestroyMenu "Games/Logic Games"
+AddToMenu "Games/Logic Games" "Games/Logic Games" Title
++ "KDiamond" Exec exec kdiamond -qwindowtitle 
++ "KSudoku" Exec exec ksudoku -qwindowicon ksudoku -qwindowtitle 
++ "Kubrick" Exec exec kubrick
++ "Palapeli" Exec exec palapeli 
++ "picmi" Exec exec picmi
++ "KDiamond" Exec exec kdiamond -qwindowtitle 
++ "KSudoku" Exec exec ksudoku -qwindowicon ksudoku -qwindowtitle 
++ "Kubrick" Exec exec kubrick
++ "Palapeli" Exec exec palapeli 
++ "picmi" Exec exec picmi
+
+DestroyMenu "Games/Tactics & Strategy"
+AddToMenu "Games/Tactics & Strategy" "Games/Tactics & Strategy" Title
++ "KAtomic" Exec exec katomic -qwindowtitle 
++ "KJumpingCube" Exec exec kjumpingcube -qwindowtitle 
++ "KMines" Exec exec kmines -qwindowtitle 
++ "KNetWalk" Exec exec knetwalk -qwindowtitle 
++ "Killbots" Exec exec killbots -qwindowtitle 
++ "Klickety" Exec exec klickety -qwindowtitle 
++ "Kolor Lines" Exec exec klines -qwindowtitle 
++ "Konquest" Exec exec konquest -qwindowtitle 
++ "KsirK" Exec exec ksirk -qwindowtitle  -qwindowicon ksirk
++ "KsirK Skin Editor" Exec exec ksirkskineditor -qwindowtitle  -qwindowicon preferences-desktop-locale
++ "Naval Battle" Exec exec knavalbattle -qwindowtitle  
++ "SameGame" Exec exec klickety --KSameMode -qwindowtitle 
++ "KAtomic" Exec exec katomic -qwindowtitle 
++ "KJumpingCube" Exec exec kjumpingcube -qwindowtitle 
++ "KMines" Exec exec kmines -qwindowtitle 
++ "KNetWalk" Exec exec knetwalk -qwindowtitle 
++ "Killbots" Exec exec killbots -qwindowtitle 
++ "Klickety" Exec exec klickety -qwindowtitle 
++ "Kolor Lines" Exec exec klines -qwindowtitle 
++ "Konquest" Exec exec konquest -qwindowtitle 
++ "KsirK" Exec exec ksirk -qwindowtitle  -qwindowicon ksirk
++ "KsirK Skin Editor" Exec exec ksirkskineditor -qwindowtitle  -qwindowicon preferences-desktop-locale
++ "Naval Battle" Exec exec knavalbattle -qwindowtitle  
++ "SameGame" Exec exec klickety --KSameMode -qwindowtitle 
+
+DestroyMenu "Graphics"
+AddToMenu "Graphics" "Graphics" Title
++ "FontForge" Exec exec fontforge 
++ "GNU Image Manipulation Program" Exec exec gimp-2.10 
++ "GQview" Exec exec gqview -r 
++ "Gwenview" Exec exec gwenview 
++ "KolourPaint" Exec exec kolourpaint 
++ "Krita" Exec exec krita 
++ "LibreOffice Draw" Exec exec libreoffice --draw 
++ "MuPDF" Exec exec mupdf 
++ "Okular" Exec exec okular 
++ "Pencil" Exec exec "/usr/bin/evoluspencil"
++ "XSane Scanner Tool" Exec exec xsane
++ "FontForge" Exec exec fontforge 
++ "GNU Image Manipulation Program" Exec exec gimp-2.10 
++ "GQview" Exec exec gqview -r 
++ "Gwenview" Exec exec gwenview 
++ "KolourPaint" Exec exec kolourpaint 
++ "Krita" Exec exec krita 
++ "LibreOffice Draw" Exec exec libreoffice --draw 
++ "MuPDF" Exec exec mupdf 
++ "Okular" Exec exec okular 
++ "Pencil" Exec exec "/usr/bin/evoluspencil"
++ "XSane Scanner Tool" Exec exec xsane
++ "" Nop
++ "More Applications" Popup "Graphics/More Applications"
+
+DestroyMenu "Graphics/More Applications"
+AddToMenu "Graphics/More Applications" "Graphics/More Applications" Title
++ "KColorChooser" Exec exec kcolorchooser
++ "KRuler" Exec exec kruler
++ "KColorChooser" Exec exec kcolorchooser
++ "KRuler" Exec exec kruler
+
+DestroyMenu "Internet"
+AddToMenu "Internet" "Internet" Title
++ "Avahi SSH Server Browser" Exec exec /usr/bin/bssh
++ "Avahi VNC Server Browser" Exec exec /usr/bin/bvnc
++ "Discord" Exec exec /opt/discord/Discord
++ "Empathy" Exec exec empathy
++ "Falkon" Exec exec falkon 
++ "FileZilla" Exec exec filezilla
++ "Flarq" Exec exec flarq
++ "Fldigi" Exec exec fldigi
++ "Flrig" Exec exec flrig
++ "Google Chrome" Exec exec /usr/bin/google-chrome-stable 
++ "Gpredict" Exec exec gpredict
++ "IM Contacts" Exec exec ktp-contactlist 
++ "KDE IM Log Viewer" Exec exec ktp-log-viewer 
++ "KGet" Exec exec kget -qwindowtitle  
++ "KRDC" Exec exec krdc -qwindowtitle  
++ "KVIrc" Exec exec kvirc -m 
++ "Kopete" Exec exec kopete -qwindowtitle  
++ "Krfb" Exec exec krfb -qwindowtitle  
++ "Mail Reader" Exec exec exo-open --launch MailReader 
++ "Mozilla Firefox" Exec exec firefox --new-window 
++ "Pidgin Internet Messenger" Exec exec pidgin
++ "QTerm" Exec exec QTerm -caption ""  
++ "Qtel" Exec exec /usr/bin/qtel
++ "Remmina" Exec exec remmina-file-wrapper 
++ "Slack" Exec exec /usr/bin/slack -s 
++ "Steam" Exec exec /usr/bin/steam 
++ "Telegram Desktop" Exec exec telegram-desktop -- 
++ "TigerVNC Viewer" Exec exec /usr/bin/vncviewer
++ "Web Browser" Exec exec exo-open --launch WebBrowser 
++ "WeeChat" Exec exec xterm -e weechat 
++ "Wireshark" Exec exec wireshark 
++ "wpa_gui" Exec exec wpa_gui
++ "Avahi SSH Server Browser" Exec exec /usr/bin/bssh
++ "Avahi VNC Server Browser" Exec exec /usr/bin/bvnc
++ "Discord" Exec exec /opt/discord/Discord
++ "Empathy" Exec exec empathy
++ "Falkon" Exec exec falkon 
++ "FileZilla" Exec exec filezilla
++ "Flarq" Exec exec flarq
++ "Fldigi" Exec exec fldigi
++ "Flrig" Exec exec flrig
++ "Google Chrome" Exec exec /usr/bin/google-chrome-stable 
++ "Gpredict" Exec exec gpredict
++ "IM Contacts" Exec exec ktp-contactlist 
++ "KDE IM Log Viewer" Exec exec ktp-log-viewer 
++ "KGet" Exec exec kget -qwindowtitle  
++ "KRDC" Exec exec krdc -qwindowtitle  
++ "KVIrc" Exec exec kvirc -m 
++ "Kopete" Exec exec kopete -qwindowtitle  
++ "Krfb" Exec exec krfb -qwindowtitle  
++ "Mail Reader" Exec exec exo-open --launch MailReader 
++ "Mozilla Firefox" Exec exec firefox --new-window 
++ "Pidgin Internet Messenger" Exec exec pidgin
++ "QTerm" Exec exec QTerm -caption ""  
++ "Qtel" Exec exec /usr/bin/qtel
++ "Remmina" Exec exec remmina-file-wrapper 
++ "Slack" Exec exec /usr/bin/slack -s 
++ "Steam" Exec exec /usr/bin/steam 
++ "Telegram Desktop" Exec exec telegram-desktop -- 
++ "TigerVNC Viewer" Exec exec /usr/bin/vncviewer
++ "Web Browser" Exec exec exo-open --launch WebBrowser 
++ "WeeChat" Exec exec xterm -e weechat 
++ "Wireshark" Exec exec wireshark 
++ "wpa_gui" Exec exec wpa_gui
++ "" Nop
+
+DestroyMenu "Multimedia"
+AddToMenu "Multimedia" "Multimedia" Title
++ "Audacity" Exec exec env UBUNTU_MENUPROXY=0 audacity 
++ "Baudline" Exec exec /usr/bin/baudline
++ "Baudline (jack support)" Exec exec /usr/bin/baudline_jack
++ "Calf Plugin Pack for JACK" Exec exec calfjackhost
++ "Cheese" Exec exec cheese
++ "Dragon Player" Exec exec dragon 
++ "Echomixer" Exec exec echomixer
++ "Elisa" Exec exec elisa 
++ "Frescobaldi" Exec exec frescobaldi 
++ "HDAJackRetask" Exec exec hdajackretask
++ "Hwmixvolume" Exec exec hwmixvolume
++ "JACK Rack" Exec exec jack-rack
++ "JAMin" Exec exec jamin
++ "JuK" Exec exec juk 
++ "K3b" Exec exec k3b 
++ "KMix" Exec exec kmix -qwindowtitle "" 
++ "Kdenlive" Exec exec kdenlive 
++ "Kwave Sound Editor" Exec exec kwave 
++ "LMMS" Exec exec lmms 
++ "Message Aggregator" Exec exec message_aggregator
++ "MuseScore 3 (3.5.0 unstable)" Exec exec mscore 
++ "OBS Studio" Exec exec obs
++ "Phonon Audio and Video" Exec exec phononsettings
++ "PulseAudio Volume Control" Exec exec pavucontrol-qt
++ "QjackCtl" Exec exec qjackctl
++ "Qsynth" Exec exec qsynth
++ "Qt V4L2 test Utility" Exec exec qv4l2
++ "Qt V4L2 video capture utility" Exec exec qvidcap
++ "Rosegarden" Exec exec rosegarden 
++ "Schism Tracker" Exec exec schismtracker 
++ "Spotify" Exec exec spotify-dbus.py 
++ "VLC media player" Exec exec /usr/bin/vlc --started-from-file 
++ "ardour6" Exec exec ardour6
++ "js8call" Exec exec js8call
++ "mpv Media Player" Exec exec mpv --player-operation-mode=pseudo-gui -- 
++ "wsjtx" Exec exec wsjtx
++ "Audacity" Exec exec env UBUNTU_MENUPROXY=0 audacity 
++ "Baudline" Exec exec /usr/bin/baudline
++ "Baudline (jack support)" Exec exec /usr/bin/baudline_jack
++ "Calf Plugin Pack for JACK" Exec exec calfjackhost
++ "Cheese" Exec exec cheese
++ "Dragon Player" Exec exec dragon 
++ "Echomixer" Exec exec echomixer
++ "Elisa" Exec exec elisa 
++ "Frescobaldi" Exec exec frescobaldi 
++ "HDAJackRetask" Exec exec hdajackretask
++ "Hwmixvolume" Exec exec hwmixvolume
++ "JACK Rack" Exec exec jack-rack
++ "JAMin" Exec exec jamin
++ "JuK" Exec exec juk 
++ "K3b" Exec exec k3b 
++ "KMix" Exec exec kmix -qwindowtitle "" 
++ "Kdenlive" Exec exec kdenlive 
++ "Kwave Sound Editor" Exec exec kwave 
++ "LMMS" Exec exec lmms 
++ "Message Aggregator" Exec exec message_aggregator
++ "MuseScore 3 (3.5.0 unstable)" Exec exec mscore 
++ "OBS Studio" Exec exec obs
++ "Phonon Audio and Video" Exec exec phononsettings
++ "PulseAudio Volume Control" Exec exec pavucontrol-qt
++ "QjackCtl" Exec exec qjackctl
++ "Qsynth" Exec exec qsynth
++ "Qt V4L2 test Utility" Exec exec qv4l2
++ "Qt V4L2 video capture utility" Exec exec qvidcap
++ "Rosegarden" Exec exec rosegarden 
++ "Schism Tracker" Exec exec schismtracker 
++ "Spotify" Exec exec spotify-dbus.py 
++ "VLC media player" Exec exec /usr/bin/vlc --started-from-file 
++ "ardour6" Exec exec ardour6
++ "js8call" Exec exec js8call
++ "mpv Media Player" Exec exec mpv --player-operation-mode=pseudo-gui -- 
++ "wsjtx" Exec exec wsjtx
++ "" Nop
+
+DestroyMenu "Office"
+AddToMenu "Office" "Office" Title
++ "LibreOffice" Exec exec libreoffice 
++ "LibreOffice Base" Exec exec libreoffice --base 
++ "LibreOffice Calc" Exec exec libreoffice --calc 
++ "LibreOffice Draw" Exec exec libreoffice --draw 
++ "LibreOffice Impress" Exec exec libreoffice --impress 
++ "LibreOffice Math" Exec exec libreoffice --math 
++ "LibreOffice Writer" Exec exec libreoffice --writer 
++ "Mozilla Thunderbird" Exec exec /usr/bin/thunderbird 
++ "Okular" Exec exec okular 
++ "XMind" Exec exec xmind
++ "" Nop
++ "LibreOffice" Exec exec libreoffice 
++ "LibreOffice Base" Exec exec libreoffice --base 
++ "LibreOffice Calc" Exec exec libreoffice --calc 
++ "LibreOffice Draw" Exec exec libreoffice --draw 
++ "LibreOffice Impress" Exec exec libreoffice --impress 
++ "LibreOffice Math" Exec exec libreoffice --math 
++ "LibreOffice Writer" Exec exec libreoffice --writer 
++ "Mozilla Thunderbird" Exec exec /usr/bin/thunderbird 
++ "Okular" Exec exec okular 
++ "XMind" Exec exec xmind
++ "" Nop
+
+DestroyMenu "Science & Math"
+AddToMenu "Science & Math" "Science & Math" Title
++ "GNU Radio Companion" Exec exec gnuradio-companion 
++ "boinc" Exec exec boincmgr
++ "GNU Radio Companion" Exec exec gnuradio-companion 
++ "boinc" Exec exec boincmgr
+
+DestroyMenu "Settings"
+AddToMenu "Settings" "Settings" Title
++ "ARandR" Exec exec arandr
++ "Accessibility" Exec exec xfce4-accessibility-settings
++ "Advanced Network Configuration" Exec exec nm-connection-editor
++ "Appearance" Exec exec xfce4-appearance-settings
++ "Clipboard Manager Settings" Exec exec xfce4-clipman-settings
++ "Desktop" Exec exec xfdesktop-settings
++ "Display" Exec exec xfce4-display-settings
++ "Elementary Configuration" Exec exec elementary_config
++ "File Manager Settings" Exec exec thunar-settings
++ "KDE System Settings" Exec exec systemsettings5
++ "Keyboard" Exec exec xfce4-keyboard-settings
++ "MIME Type Editor" Exec exec xfce4-mime-settings
++ "Monitor Settings" Exec exec lxrandr
++ "Mouse and Touchpad" Exec exec xfce4-mouse-settings
++ "NVIDIA X Server Settings" Exec exec /usr/bin/nvidia-settings
++ "Notifications" Exec exec xfce4-notifyd-config
++ "Panel" Exec exec xfce4-panel --preferences
++ "Power Manager" Exec exec xfce4-power-manager-settings
++ "Preferred Applications" Exec exec exo-preferred-applications
++ "Print Settings" Exec exec system-config-printer
++ "Removable Drives and Media" Exec exec thunar-volman-settings
++ "Screensaver" Exec exec xscreensaver-demo
++ "Session and Startup" Exec exec xfce4-session-settings
++ "Settings Editor" Exec exec xfce4-settings-editor
++ "Settings Manager" Exec exec xfce4-settings-manager
++ "System Settings" Exec exec systemsettings5
++ "Tint2 Settings" Exec exec tint2conf
++ "Window Manager" Exec exec xfwm4-settings
++ "Window Manager Tweaks" Exec exec xfwm4-tweaks-settings
++ "Workspaces" Exec exec xfwm4-workspace-settings
++ "Xfce Terminal" Exec exec xfce4-terminal --preferences
++ "ARandR" Exec exec arandr
++ "Accessibility" Exec exec xfce4-accessibility-settings
++ "Advanced Network Configuration" Exec exec nm-connection-editor
++ "Appearance" Exec exec xfce4-appearance-settings
++ "Clipboard Manager Settings" Exec exec xfce4-clipman-settings
++ "Desktop" Exec exec xfdesktop-settings
++ "Display" Exec exec xfce4-display-settings
++ "Elementary Configuration" Exec exec elementary_config
++ "File Manager Settings" Exec exec thunar-settings
++ "KDE System Settings" Exec exec systemsettings5
++ "Keyboard" Exec exec xfce4-keyboard-settings
++ "MIME Type Editor" Exec exec xfce4-mime-settings
++ "Monitor Settings" Exec exec lxrandr
++ "Mouse and Touchpad" Exec exec xfce4-mouse-settings
++ "NVIDIA X Server Settings" Exec exec /usr/bin/nvidia-settings
++ "Notifications" Exec exec xfce4-notifyd-config
++ "Panel" Exec exec xfce4-panel --preferences
++ "Power Manager" Exec exec xfce4-power-manager-settings
++ "Preferred Applications" Exec exec exo-preferred-applications
++ "Print Settings" Exec exec system-config-printer
++ "Removable Drives and Media" Exec exec thunar-volman-settings
++ "Screensaver" Exec exec xscreensaver-demo
++ "Session and Startup" Exec exec xfce4-session-settings
++ "Settings Editor" Exec exec xfce4-settings-editor
++ "Settings Manager" Exec exec xfce4-settings-manager
++ "System Settings" Exec exec systemsettings5
++ "Tint2 Settings" Exec exec tint2conf
++ "Window Manager" Exec exec xfwm4-settings
++ "Window Manager Tweaks" Exec exec xfwm4-tweaks-settings
++ "Workspaces" Exec exec xfwm4-workspace-settings
++ "Xfce Terminal" Exec exec xfce4-terminal --preferences
+
+DestroyMenu "System"
+AddToMenu "System" "System" Title
++ "Bulk Rename" Exec exec /usr/lib64/Thunar/ThunarBulkRename 
++ "Cool Retro Term" Exec exec cool-retro-term
++ "Disk Usage Analyzer" Exec exec baobab
++ "Dolphin" Exec exec dolphin 
++ "GKrellM" Exec exec gkrellm
++ "Hardware Lister" Exec exec /usr/sbin/gtk-lshw
++ "Htop" Exec exec xterm -e htop
++ "Info Center" Exec exec kinfocenter
++ "KDiskFree" Exec exec kdf -qwindowtitle 
++ "KSysGuard" Exec exec ksysguard 
++ "KSystemLog" Exec exec ksystemlog -qwindowtitle 
++ "KWalletManager" Exec exec kwalletmanager5 
++ "Konsole" Exec exec konsole
++ "KwikDisk" Exec exec kwikdisk -qwindowtitle 
++ "Log Out" Exec exec xfce4-session-logout
++ "Manage Printing" Exec exec /usr/bin/xdg-open http://localhost:631/
++ "NVIDIA X Server Settings" Exec exec /usr/bin/nvidia-settings
++ "Oracle VM VirtualBox" Exec exec VirtualBox 
++ "Print Settings" Exec exec system-config-printer
++ "Sensor Viewer" Exec exec xfce4-sensors
++ "Terminology" Exec exec terminology
++ "Thunar File Manager" Exec exec thunar 
++ "Tint2" Exec exec tint2
++ "USB Viewer" Exec exec usbview
++ "UXTerm" Exec exec uxterm
++ "VMware Player" Exec exec /usr/bin/vmplayer 
++ "WoeUSB" Exec exec woeusbgui
++ "XTerm" Exec exec xterm
++ "Xfce Terminal" Exec exec xfce4-terminal
++ "Yakuake" Exec exec yakuake
++ "ranger" Exec exec xterm -e ranger
++ "rxvt-unicode" Exec exec urxvt
++ "Bulk Rename" Exec exec /usr/lib64/Thunar/ThunarBulkRename 
++ "Cool Retro Term" Exec exec cool-retro-term
++ "Disk Usage Analyzer" Exec exec baobab
++ "Dolphin" Exec exec dolphin 
++ "GKrellM" Exec exec gkrellm
++ "Hardware Lister" Exec exec /usr/sbin/gtk-lshw
++ "Htop" Exec exec xterm -e htop
++ "Info Center" Exec exec kinfocenter
++ "KDiskFree" Exec exec kdf -qwindowtitle 
++ "KSysGuard" Exec exec ksysguard 
++ "KSystemLog" Exec exec ksystemlog -qwindowtitle 
++ "KWalletManager" Exec exec kwalletmanager5 
++ "Konsole" Exec exec konsole
++ "KwikDisk" Exec exec kwikdisk -qwindowtitle 
++ "Log Out" Exec exec xfce4-session-logout
++ "Manage Printing" Exec exec /usr/bin/xdg-open http://localhost:631/
++ "NVIDIA X Server Settings" Exec exec /usr/bin/nvidia-settings
++ "Oracle VM VirtualBox" Exec exec VirtualBox 
++ "Print Settings" Exec exec system-config-printer
++ "Sensor Viewer" Exec exec xfce4-sensors
++ "Terminology" Exec exec terminology
++ "Thunar File Manager" Exec exec thunar 
++ "Tint2" Exec exec tint2
++ "USB Viewer" Exec exec usbview
++ "UXTerm" Exec exec uxterm
++ "VMware Player" Exec exec /usr/bin/vmplayer 
++ "WoeUSB" Exec exec woeusbgui
++ "XTerm" Exec exec xterm
++ "Xfce Terminal" Exec exec xfce4-terminal
++ "Yakuake" Exec exec yakuake
++ "ranger" Exec exec xterm -e ranger
++ "rxvt-unicode" Exec exec urxvt
++ "" Nop
+
+DestroyMenu "Utilities"
+AddToMenu "Utilities" "Utilities" Title
++ "About Xfce" Exec exec xfce4-about
++ "Active@ Disk Editor" Exec exec /opt/lsoft/DiskEditor/DiskEditor.sh
++ "Application Finder" Exec exec xfce4-appfinder
++ "Ark" Exec exec ark 
++ "Bulk Rename" Exec exec /usr/lib64/Thunar/ThunarBulkRename 
++ "Clipboard Manager" Exec exec xfce4-clipman
++ "Elementary Perf" Exec exec elementary_perf
++ "Elementary Test" Exec exec elementary_test
++ "File Manager" Exec exec exo-open --launch FileManager 
++ "Filelight" Exec exec filelight 
++ "Frescobaldi" Exec exec frescobaldi 
++ "HP Device Manager" Exec exec hp-toolbox
++ "KBackup" Exec exec kbackup 
++ "KCalc" Exec exec kcalc
++ "KCharSelect" Exec exec kcharselect --qwindowtitle 
++ "KFind" Exec exec kfind 
++ "KTeaTime" Exec exec kteatime
++ "KTimer" Exec exec ktimer
++ "KWrite" Exec exec kwrite 
++ "Kate" Exec exec kate -b 
++ "KeePassXC" Exec exec keepassxc 
++ "Klipper" Exec exec klipper
++ "Okteta" Exec exec okteta 
++ "QtADB" Exec exec QtADB
++ "Run Program..." Exec exec xfce4-appfinder --collapsed
++ "Sensor Viewer" Exec exec xfce4-sensors
++ "Software Token" Exec exec stoken-gui
++ "Software Token (small)" Exec exec stoken-gui --small
++ "Spectacle" Exec exec qdbus org.kde.Spectacle / StartAgent
++ "Sweeper" Exec exec sweeper
++ "Terminal Emulator" Exec exec exo-open --launch TerminalEmulator
++ "Thunar File Manager" Exec exec thunar 
++ "Vim" Exec exec xterm -e vim 
++ "About Xfce" Exec exec xfce4-about
++ "Active@ Disk Editor" Exec exec /opt/lsoft/DiskEditor/DiskEditor.sh
++ "Application Finder" Exec exec xfce4-appfinder
++ "Ark" Exec exec ark 
++ "Bulk Rename" Exec exec /usr/lib64/Thunar/ThunarBulkRename 
++ "Clipboard Manager" Exec exec xfce4-clipman
++ "Elementary Perf" Exec exec elementary_perf
++ "Elementary Test" Exec exec elementary_test
++ "File Manager" Exec exec exo-open --launch FileManager 
++ "Filelight" Exec exec filelight 
++ "Frescobaldi" Exec exec frescobaldi 
++ "HP Device Manager" Exec exec hp-toolbox
++ "KBackup" Exec exec kbackup 
++ "KCalc" Exec exec kcalc
++ "KCharSelect" Exec exec kcharselect --qwindowtitle 
++ "KFind" Exec exec kfind 
++ "KTeaTime" Exec exec kteatime
++ "KTimer" Exec exec ktimer
++ "KWrite" Exec exec kwrite 
++ "Kate" Exec exec kate -b 
++ "KeePassXC" Exec exec keepassxc 
++ "Klipper" Exec exec klipper
++ "Okteta" Exec exec okteta 
++ "QtADB" Exec exec QtADB
++ "Run Program..." Exec exec xfce4-appfinder --collapsed
++ "Sensor Viewer" Exec exec xfce4-sensors
++ "Software Token" Exec exec stoken-gui
++ "Software Token (small)" Exec exec stoken-gui --small
++ "Spectacle" Exec exec qdbus org.kde.Spectacle / StartAgent
++ "Sweeper" Exec exec sweeper
++ "Terminal Emulator" Exec exec exo-open --launch TerminalEmulator
++ "Thunar File Manager" Exec exec thunar 
++ "Vim" Exec exec xterm -e vim 
++ "" Nop
+
+DestroyMenu "Development"
+AddToMenu "Development" "Development" Title
++ "Web Development" Popup "Development/Web Development"
++ "Code::Blocks IDE" Exec exec codeblocks 
++ "Elementary Perf" Exec exec elementary_perf
++ "Elementary Test" Exec exec elementary_test
++ "FLUID" Exec exec fluid 
++ "Fritzing" Exec exec Fritzing
++ "GNU Radio Companion" Exec exec gnuradio-companion 
++ "KAppTemplate" Exec exec kapptemplate
++ "KDevelop" Exec exec kdevelop
++ "KDevelop (Pick Session)" Exec exec kdevelop --ps
++ "Lazarus IDE" Exec exec startlazarus
++ "Nemiver" Exec exec nemiver
++ "Qt 5 Designer" Exec exec /usr/lib64/qt5/bin/designer
++ "SASM" Exec exec sasm
++ "Sourcetrail" Exec exec /opt/bin/sourcetrail
++ "pycharm-community" Exec exec pycharm-community
++ "sandbox" Exec exec xterm -e sandbox
++ "Web Development" Popup "Development/Web Development"
++ "Code::Blocks IDE" Exec exec codeblocks 
++ "Elementary Perf" Exec exec elementary_perf
++ "Elementary Test" Exec exec elementary_test
++ "FLUID" Exec exec fluid 
++ "Fritzing" Exec exec Fritzing
++ "GNU Radio Companion" Exec exec gnuradio-companion 
++ "KAppTemplate" Exec exec kapptemplate
++ "KDevelop" Exec exec kdevelop
++ "KDevelop (Pick Session)" Exec exec kdevelop --ps
++ "Lazarus IDE" Exec exec startlazarus
++ "Nemiver" Exec exec nemiver
++ "Qt 5 Designer" Exec exec /usr/lib64/qt5/bin/designer
++ "SASM" Exec exec sasm
++ "Sourcetrail" Exec exec /opt/bin/sourcetrail
++ "pycharm-community" Exec exec pycharm-community
++ "sandbox" Exec exec xterm -e sandbox
+
+DestroyMenu "Development/Web Development"
+AddToMenu "Development/Web Development" "Development/Web Development" Title
++ "KImageMapEditor" Exec exec kimagemapeditor -qwindowtitle   
++ "KImageMapEditor" Exec exec kimagemapeditor -qwindowtitle   
+
+DestroyMenu "Development/Web Development"
+AddToMenu "Development/Web Development" "Development/Web Development" Title
++ "KImageMapEditor" Exec exec kimagemapeditor -qwindowtitle   
++ "KImageMapEditor" Exec exec kimagemapeditor -qwindowtitle   
+
+DestroyMenu "Education"
+AddToMenu "Education" "Education" Title
++ "Languages" Popup "Education/Languages"
++ "Mathematics" Popup "Education/Mathematics"
++ "Miscellaneous" Popup "Education/Miscellaneous"
++ "Science" Popup "Education/Science"
++ "Languages" Popup "Education/Languages"
++ "Mathematics" Popup "Education/Mathematics"
++ "Miscellaneous" Popup "Education/Miscellaneous"
++ "Science" Popup "Education/Science"
+
+DestroyMenu "Education/Languages"
+AddToMenu "Education/Languages" "Education/Languages" Title
++ "Artikulate" Exec exec artikulate -qwindowtitle "" 
++ "KHangMan" Exec exec khangman -qwindowtitle "" 
++ "KLettres" Exec exec klettres -qwindowtitle  -qwindowicon klettres
++ "KWordQuiz" Exec exec kwordquiz  -qwindowtitle  -qwindowicon kwordquiz
++ "Kanagram" Exec exec kanagram
++ "Kiten" Exec exec kiten -qwindowtitle  -qwindowicon kiten
++ "Parley" Exec exec parley 
++ "Artikulate" Exec exec artikulate -qwindowtitle "" 
++ "KHangMan" Exec exec khangman -qwindowtitle "" 
++ "KLettres" Exec exec klettres -qwindowtitle  -qwindowicon klettres
++ "KWordQuiz" Exec exec kwordquiz  -qwindowtitle  -qwindowicon kwordquiz
++ "Kanagram" Exec exec kanagram
++ "Kiten" Exec exec kiten -qwindowtitle  -qwindowicon kiten
++ "Parley" Exec exec parley 
+
+DestroyMenu "Education/Mathematics"
+AddToMenu "Education/Mathematics" "Education/Mathematics" Title
++ "Cantor" Exec exec cantor -qwindowicon cantor -qwindowtitle  
++ "KAlgebra" Exec exec kalgebra 
++ "KAlgebra Mobile" Exec exec kalgebramobile 
++ "KBruch" Exec exec kbruch -qwindowtitle  -qwindowicon kbruch
++ "Kig" Exec exec kig  --qwindowtitle 
++ "KmPlot" Exec exec kmplot 
++ "LibreOffice Math" Exec exec libreoffice --math 
++ "Rocs" Exec exec rocs  -qwindowtitle 
++ "Cantor" Exec exec cantor -qwindowicon cantor -qwindowtitle  
++ "KAlgebra" Exec exec kalgebra 
++ "KAlgebra Mobile" Exec exec kalgebramobile 
++ "KBruch" Exec exec kbruch -qwindowtitle  -qwindowicon kbruch
++ "Kig" Exec exec kig  --qwindowtitle 
++ "KmPlot" Exec exec kmplot 
++ "LibreOffice Math" Exec exec libreoffice --math 
++ "Rocs" Exec exec rocs  -qwindowtitle 
+
+DestroyMenu "Education/Miscellaneous"
+AddToMenu "Education/Miscellaneous" "Education/Miscellaneous" Title
++ "Blinken" Exec exec blinken
++ "KGeography" Exec exec kgeography
++ "KTouch" Exec exec ktouch
++ "KTurtle" Exec exec kturtle -qwindowtitle 
++ "Minuet" Exec exec minuet
++ "QSSTV" Exec exec qsstv
++ "Step" Exec exec step -qwindowtitle  -qwindowicon step
++ "vym" Exec exec vym
++ "Blinken" Exec exec blinken
++ "KGeography" Exec exec kgeography
++ "KTouch" Exec exec ktouch
++ "KTurtle" Exec exec kturtle -qwindowtitle 
++ "Minuet" Exec exec minuet
++ "QSSTV" Exec exec qsstv
++ "Step" Exec exec step -qwindowtitle  -qwindowicon step
++ "vym" Exec exec vym
+
+DestroyMenu "Education/Science"
+AddToMenu "Education/Science" "Education/Science" Title
++ "Cantor" Exec exec cantor -qwindowicon cantor -qwindowtitle  
++ "Gpredict" Exec exec gpredict
++ "KAlgebra" Exec exec kalgebra 
++ "KAlgebra Mobile" Exec exec kalgebramobile 
++ "KDE Marble" Exec exec marble 
++ "Kalzium" Exec exec kalzium -qwindowtitle 
++ "LibreOffice Math" Exec exec libreoffice --math 
++ "Rocs" Exec exec rocs  -qwindowtitle 
++ "Cantor" Exec exec cantor -qwindowicon cantor -qwindowtitle  
++ "Gpredict" Exec exec gpredict
++ "KAlgebra" Exec exec kalgebra 
++ "KAlgebra Mobile" Exec exec kalgebramobile 
++ "KDE Marble" Exec exec marble 
++ "Kalzium" Exec exec kalzium -qwindowtitle 
++ "LibreOffice Math" Exec exec libreoffice --math 
++ "Rocs" Exec exec rocs  -qwindowtitle 
+
+DestroyMenu "Education/Languages"
+AddToMenu "Education/Languages" "Education/Languages" Title
++ "Artikulate" Exec exec artikulate -qwindowtitle "" 
++ "KHangMan" Exec exec khangman -qwindowtitle "" 
++ "KLettres" Exec exec klettres -qwindowtitle  -qwindowicon klettres
++ "KWordQuiz" Exec exec kwordquiz  -qwindowtitle  -qwindowicon kwordquiz
++ "Kanagram" Exec exec kanagram
++ "Kiten" Exec exec kiten -qwindowtitle  -qwindowicon kiten
++ "Parley" Exec exec parley 
++ "Artikulate" Exec exec artikulate -qwindowtitle "" 
++ "KHangMan" Exec exec khangman -qwindowtitle "" 
++ "KLettres" Exec exec klettres -qwindowtitle  -qwindowicon klettres
++ "KWordQuiz" Exec exec kwordquiz  -qwindowtitle  -qwindowicon kwordquiz
++ "Kanagram" Exec exec kanagram
++ "Kiten" Exec exec kiten -qwindowtitle  -qwindowicon kiten
++ "Parley" Exec exec parley 
+
+DestroyMenu "Education/Mathematics"
+AddToMenu "Education/Mathematics" "Education/Mathematics" Title
++ "Cantor" Exec exec cantor -qwindowicon cantor -qwindowtitle  
++ "KAlgebra" Exec exec kalgebra 
++ "KAlgebra Mobile" Exec exec kalgebramobile 
++ "KBruch" Exec exec kbruch -qwindowtitle  -qwindowicon kbruch
++ "Kig" Exec exec kig  --qwindowtitle 
++ "KmPlot" Exec exec kmplot 
++ "LibreOffice Math" Exec exec libreoffice --math 
++ "Rocs" Exec exec rocs  -qwindowtitle 
++ "Cantor" Exec exec cantor -qwindowicon cantor -qwindowtitle  
++ "KAlgebra" Exec exec kalgebra 
++ "KAlgebra Mobile" Exec exec kalgebramobile 
++ "KBruch" Exec exec kbruch -qwindowtitle  -qwindowicon kbruch
++ "Kig" Exec exec kig  --qwindowtitle 
++ "KmPlot" Exec exec kmplot 
++ "LibreOffice Math" Exec exec libreoffice --math 
++ "Rocs" Exec exec rocs  -qwindowtitle 
+
+DestroyMenu "Education/Miscellaneous"
+AddToMenu "Education/Miscellaneous" "Education/Miscellaneous" Title
++ "Blinken" Exec exec blinken
++ "KGeography" Exec exec kgeography
++ "KTouch" Exec exec ktouch
++ "KTurtle" Exec exec kturtle -qwindowtitle 
++ "Minuet" Exec exec minuet
++ "QSSTV" Exec exec qsstv
++ "Step" Exec exec step -qwindowtitle  -qwindowicon step
++ "vym" Exec exec vym
++ "Blinken" Exec exec blinken
++ "KGeography" Exec exec kgeography
++ "KTouch" Exec exec ktouch
++ "KTurtle" Exec exec kturtle -qwindowtitle 
++ "Minuet" Exec exec minuet
++ "QSSTV" Exec exec qsstv
++ "Step" Exec exec step -qwindowtitle  -qwindowicon step
++ "vym" Exec exec vym
+
+DestroyMenu "Education/Science"
+AddToMenu "Education/Science" "Education/Science" Title
++ "Cantor" Exec exec cantor -qwindowicon cantor -qwindowtitle  
++ "Gpredict" Exec exec gpredict
++ "KAlgebra" Exec exec kalgebra 
++ "KAlgebra Mobile" Exec exec kalgebramobile 
++ "KDE Marble" Exec exec marble 
++ "Kalzium" Exec exec kalzium -qwindowtitle 
++ "LibreOffice Math" Exec exec libreoffice --math 
++ "Rocs" Exec exec rocs  -qwindowtitle 
++ "Cantor" Exec exec cantor -qwindowicon cantor -qwindowtitle  
++ "Gpredict" Exec exec gpredict
++ "KAlgebra" Exec exec kalgebra 
++ "KAlgebra Mobile" Exec exec kalgebramobile 
++ "KDE Marble" Exec exec marble 
++ "Kalzium" Exec exec kalzium -qwindowtitle 
++ "LibreOffice Math" Exec exec libreoffice --math 
++ "Rocs" Exec exec rocs  -qwindowtitle 
+
+DestroyMenu "Games"
+AddToMenu "Games" "Games" Title
++ "Arcade" Popup "Games/Arcade"
++ "Board Games" Popup "Games/Board Games"
++ "Card Games" Popup "Games/Card Games"
++ "Games for Kids" Popup "Games/Games for Kids"
++ "Logic Games" Popup "Games/Logic Games"
++ "Tactics && Strategy" Popup "Games/Tactics & Strategy"
++ "Cities: Skylines" Exec exec steam steam://rungameid/255710
++ "DOOM" Exec exec steam steam://rungameid/379720
++ "DOSBox" Exec exec dosbox
++ "Knights and Merchants" Exec exec steam steam://rungameid/253900
++ "ScummVM" Exec exec scummvm
++ "Sid Meier's Civilization VI" Exec exec steam steam://rungameid/289070
++ "Steam" Exec exec /usr/bin/steam 
++ "The Witcher 2: Assassins of Kings Enhanced Edition" Exec exec steam steam://rungameid/20920
++ "Arcade" Popup "Games/Arcade"
++ "Board Games" Popup "Games/Board Games"
++ "Card Games" Popup "Games/Card Games"
++ "Games for Kids" Popup "Games/Games for Kids"
++ "Logic Games" Popup "Games/Logic Games"
++ "Tactics && Strategy" Popup "Games/Tactics & Strategy"
++ "Cities: Skylines" Exec exec steam steam://rungameid/255710
++ "DOOM" Exec exec steam steam://rungameid/379720
++ "DOSBox" Exec exec dosbox
++ "Knights and Merchants" Exec exec steam steam://rungameid/253900
++ "ScummVM" Exec exec scummvm
++ "Sid Meier's Civilization VI" Exec exec steam steam://rungameid/289070
++ "Steam" Exec exec /usr/bin/steam 
++ "The Witcher 2: Assassins of Kings Enhanced Edition" Exec exec steam steam://rungameid/20920
+
+DestroyMenu "Games/Arcade"
+AddToMenu "Games/Arcade" "Games/Arcade" Title
++ "Bomber" Exec exec bomber -qwindowtitle 
++ "Granatier" Exec exec granatier
++ "KBlocks" Exec exec kblocks -qwindowtitle 
++ "KBounce" Exec exec kbounce -qwindowtitle 
++ "KBreakOut" Exec exec kbreakout -qwindowtitle 
++ "KGoldrunner" Exec exec kgoldrunner
++ "KSnakeDuel" Exec exec ksnakeduel
++ "KSpaceDuel" Exec exec kspaceduel -qwindowtitle 
++ "Kapman" Exec exec kapman
++ "Kolf" Exec exec kolf 
++ "Kollision" Exec exec kollision
++ "Bomber" Exec exec bomber -qwindowtitle 
++ "Granatier" Exec exec granatier
++ "KBlocks" Exec exec kblocks -qwindowtitle 
++ "KBounce" Exec exec kbounce -qwindowtitle 
++ "KBreakOut" Exec exec kbreakout -qwindowtitle 
++ "KGoldrunner" Exec exec kgoldrunner
++ "KSnakeDuel" Exec exec ksnakeduel
++ "KSpaceDuel" Exec exec kspaceduel -qwindowtitle 
++ "Kapman" Exec exec kapman
++ "Kolf" Exec exec kolf 
++ "Kollision" Exec exec kollision
+
+DestroyMenu "Games/Board Games"
+AddToMenu "Games/Board Games" "Games/Board Games" Title
++ "Bovo" Exec exec bovo -qwindowtitle 
++ "KBlackBox" Exec exec kblackbox -qwindowtitle 
++ "KFourInLine" Exec exec kfourinline
++ "KMahjongg" Exec exec kmahjongg -qwindowtitle 
++ "KReversi" Exec exec kreversi -qwindowtitle 
++ "KSquares" Exec exec ksquares -qwindowicon ksquares -qwindowtitle 
++ "Kigo" Exec exec kigo  -qwindowicon kigo -qwindowtitle 
++ "Kiriki" Exec exec kiriki -qwindowtitle 
++ "Knights" Exec exec knights  -qwindowtitle 
++ "Shisen-Sho" Exec exec kshisen -qwindowtitle 
++ "Bovo" Exec exec bovo -qwindowtitle 
++ "KBlackBox" Exec exec kblackbox -qwindowtitle 
++ "KFourInLine" Exec exec kfourinline
++ "KMahjongg" Exec exec kmahjongg -qwindowtitle 
++ "KReversi" Exec exec kreversi -qwindowtitle 
++ "KSquares" Exec exec ksquares -qwindowicon ksquares -qwindowtitle 
++ "Kigo" Exec exec kigo  -qwindowicon kigo -qwindowtitle 
++ "Kiriki" Exec exec kiriki -qwindowtitle 
++ "Knights" Exec exec knights  -qwindowtitle 
++ "Shisen-Sho" Exec exec kshisen -qwindowtitle 
+
+DestroyMenu "Games/Card Games"
+AddToMenu "Games/Card Games" "Games/Card Games" Title
++ "KPatience" Exec exec kpat -qwindowtitle  
++ "LSkat" Exec exec lskat
++ "KPatience" Exec exec kpat -qwindowtitle  
++ "LSkat" Exec exec lskat
+
+DestroyMenu "Games/Games for Kids"
+AddToMenu "Games/Games for Kids" "Games/Games for Kids" Title
++ "Blinken" Exec exec blinken
++ "KHangMan" Exec exec khangman -qwindowtitle "" 
++ "Kanagram" Exec exec kanagram
++ "Potato Guy" Exec exec ktuberling -qwindowtitle  
++ "Blinken" Exec exec blinken
++ "KHangMan" Exec exec khangman -qwindowtitle "" 
++ "Kanagram" Exec exec kanagram
++ "Potato Guy" Exec exec ktuberling -qwindowtitle  
+
+DestroyMenu "Games/Logic Games"
+AddToMenu "Games/Logic Games" "Games/Logic Games" Title
++ "KDiamond" Exec exec kdiamond -qwindowtitle 
++ "KSudoku" Exec exec ksudoku -qwindowicon ksudoku -qwindowtitle 
++ "Kubrick" Exec exec kubrick
++ "Palapeli" Exec exec palapeli 
++ "picmi" Exec exec picmi
++ "KDiamond" Exec exec kdiamond -qwindowtitle 
++ "KSudoku" Exec exec ksudoku -qwindowicon ksudoku -qwindowtitle 
++ "Kubrick" Exec exec kubrick
++ "Palapeli" Exec exec palapeli 
++ "picmi" Exec exec picmi
+
+DestroyMenu "Games/Tactics & Strategy"
+AddToMenu "Games/Tactics & Strategy" "Games/Tactics & Strategy" Title
++ "KAtomic" Exec exec katomic -qwindowtitle 
++ "KJumpingCube" Exec exec kjumpingcube -qwindowtitle 
++ "KMines" Exec exec kmines -qwindowtitle 
++ "KNetWalk" Exec exec knetwalk -qwindowtitle 
++ "Killbots" Exec exec killbots -qwindowtitle 
++ "Klickety" Exec exec klickety -qwindowtitle 
++ "Kolor Lines" Exec exec klines -qwindowtitle 
++ "Konquest" Exec exec konquest -qwindowtitle 
++ "KsirK" Exec exec ksirk -qwindowtitle  -qwindowicon ksirk
++ "KsirK Skin Editor" Exec exec ksirkskineditor -qwindowtitle  -qwindowicon preferences-desktop-locale
++ "Naval Battle" Exec exec knavalbattle -qwindowtitle  
++ "SameGame" Exec exec klickety --KSameMode -qwindowtitle 
++ "KAtomic" Exec exec katomic -qwindowtitle 
++ "KJumpingCube" Exec exec kjumpingcube -qwindowtitle 
++ "KMines" Exec exec kmines -qwindowtitle 
++ "KNetWalk" Exec exec knetwalk -qwindowtitle 
++ "Killbots" Exec exec killbots -qwindowtitle 
++ "Klickety" Exec exec klickety -qwindowtitle 
++ "Kolor Lines" Exec exec klines -qwindowtitle 
++ "Konquest" Exec exec konquest -qwindowtitle 
++ "KsirK" Exec exec ksirk -qwindowtitle  -qwindowicon ksirk
++ "KsirK Skin Editor" Exec exec ksirkskineditor -qwindowtitle  -qwindowicon preferences-desktop-locale
++ "Naval Battle" Exec exec knavalbattle -qwindowtitle  
++ "SameGame" Exec exec klickety --KSameMode -qwindowtitle 
+
+DestroyMenu "Games/Arcade"
+AddToMenu "Games/Arcade" "Games/Arcade" Title
++ "Bomber" Exec exec bomber -qwindowtitle 
++ "Granatier" Exec exec granatier
++ "KBlocks" Exec exec kblocks -qwindowtitle 
++ "KBounce" Exec exec kbounce -qwindowtitle 
++ "KBreakOut" Exec exec kbreakout -qwindowtitle 
++ "KGoldrunner" Exec exec kgoldrunner
++ "KSnakeDuel" Exec exec ksnakeduel
++ "KSpaceDuel" Exec exec kspaceduel -qwindowtitle 
++ "Kapman" Exec exec kapman
++ "Kolf" Exec exec kolf 
++ "Kollision" Exec exec kollision
++ "Bomber" Exec exec bomber -qwindowtitle 
++ "Granatier" Exec exec granatier
++ "KBlocks" Exec exec kblocks -qwindowtitle 
++ "KBounce" Exec exec kbounce -qwindowtitle 
++ "KBreakOut" Exec exec kbreakout -qwindowtitle 
++ "KGoldrunner" Exec exec kgoldrunner
++ "KSnakeDuel" Exec exec ksnakeduel
++ "KSpaceDuel" Exec exec kspaceduel -qwindowtitle 
++ "Kapman" Exec exec kapman
++ "Kolf" Exec exec kolf 
++ "Kollision" Exec exec kollision
+
+DestroyMenu "Games/Board Games"
+AddToMenu "Games/Board Games" "Games/Board Games" Title
++ "Bovo" Exec exec bovo -qwindowtitle 
++ "KBlackBox" Exec exec kblackbox -qwindowtitle 
++ "KFourInLine" Exec exec kfourinline
++ "KMahjongg" Exec exec kmahjongg -qwindowtitle 
++ "KReversi" Exec exec kreversi -qwindowtitle 
++ "KSquares" Exec exec ksquares -qwindowicon ksquares -qwindowtitle 
++ "Kigo" Exec exec kigo  -qwindowicon kigo -qwindowtitle 
++ "Kiriki" Exec exec kiriki -qwindowtitle 
++ "Knights" Exec exec knights  -qwindowtitle 
++ "Shisen-Sho" Exec exec kshisen -qwindowtitle 
++ "Bovo" Exec exec bovo -qwindowtitle 
++ "KBlackBox" Exec exec kblackbox -qwindowtitle 
++ "KFourInLine" Exec exec kfourinline
++ "KMahjongg" Exec exec kmahjongg -qwindowtitle 
++ "KReversi" Exec exec kreversi -qwindowtitle 
++ "KSquares" Exec exec ksquares -qwindowicon ksquares -qwindowtitle 
++ "Kigo" Exec exec kigo  -qwindowicon kigo -qwindowtitle 
++ "Kiriki" Exec exec kiriki -qwindowtitle 
++ "Knights" Exec exec knights  -qwindowtitle 
++ "Shisen-Sho" Exec exec kshisen -qwindowtitle 
+
+DestroyMenu "Games/Card Games"
+AddToMenu "Games/Card Games" "Games/Card Games" Title
++ "KPatience" Exec exec kpat -qwindowtitle  
++ "LSkat" Exec exec lskat
++ "KPatience" Exec exec kpat -qwindowtitle  
++ "LSkat" Exec exec lskat
+
+DestroyMenu "Games/Games for Kids"
+AddToMenu "Games/Games for Kids" "Games/Games for Kids" Title
++ "Blinken" Exec exec blinken
++ "KHangMan" Exec exec khangman -qwindowtitle "" 
++ "Kanagram" Exec exec kanagram
++ "Potato Guy" Exec exec ktuberling -qwindowtitle  
++ "Blinken" Exec exec blinken
++ "KHangMan" Exec exec khangman -qwindowtitle "" 
++ "Kanagram" Exec exec kanagram
++ "Potato Guy" Exec exec ktuberling -qwindowtitle  
+
+DestroyMenu "Games/Logic Games"
+AddToMenu "Games/Logic Games" "Games/Logic Games" Title
++ "KDiamond" Exec exec kdiamond -qwindowtitle 
++ "KSudoku" Exec exec ksudoku -qwindowicon ksudoku -qwindowtitle 
++ "Kubrick" Exec exec kubrick
++ "Palapeli" Exec exec palapeli 
++ "picmi" Exec exec picmi
++ "KDiamond" Exec exec kdiamond -qwindowtitle 
++ "KSudoku" Exec exec ksudoku -qwindowicon ksudoku -qwindowtitle 
++ "Kubrick" Exec exec kubrick
++ "Palapeli" Exec exec palapeli 
++ "picmi" Exec exec picmi
+
+DestroyMenu "Games/Tactics & Strategy"
+AddToMenu "Games/Tactics & Strategy" "Games/Tactics & Strategy" Title
++ "KAtomic" Exec exec katomic -qwindowtitle 
++ "KJumpingCube" Exec exec kjumpingcube -qwindowtitle 
++ "KMines" Exec exec kmines -qwindowtitle 
++ "KNetWalk" Exec exec knetwalk -qwindowtitle 
++ "Killbots" Exec exec killbots -qwindowtitle 
++ "Klickety" Exec exec klickety -qwindowtitle 
++ "Kolor Lines" Exec exec klines -qwindowtitle 
++ "Konquest" Exec exec konquest -qwindowtitle 
++ "KsirK" Exec exec ksirk -qwindowtitle  -qwindowicon ksirk
++ "KsirK Skin Editor" Exec exec ksirkskineditor -qwindowtitle  -qwindowicon preferences-desktop-locale
++ "Naval Battle" Exec exec knavalbattle -qwindowtitle  
++ "SameGame" Exec exec klickety --KSameMode -qwindowtitle 
++ "KAtomic" Exec exec katomic -qwindowtitle 
++ "KJumpingCube" Exec exec kjumpingcube -qwindowtitle 
++ "KMines" Exec exec kmines -qwindowtitle 
++ "KNetWalk" Exec exec knetwalk -qwindowtitle 
++ "Killbots" Exec exec killbots -qwindowtitle 
++ "Klickety" Exec exec klickety -qwindowtitle 
++ "Kolor Lines" Exec exec klines -qwindowtitle 
++ "Konquest" Exec exec konquest -qwindowtitle 
++ "KsirK" Exec exec ksirk -qwindowtitle  -qwindowicon ksirk
++ "KsirK Skin Editor" Exec exec ksirkskineditor -qwindowtitle  -qwindowicon preferences-desktop-locale
++ "Naval Battle" Exec exec knavalbattle -qwindowtitle  
++ "SameGame" Exec exec klickety --KSameMode -qwindowtitle 
+
+DestroyMenu "Graphics"
+AddToMenu "Graphics" "Graphics" Title
++ "FontForge" Exec exec fontforge 
++ "GNU Image Manipulation Program" Exec exec gimp-2.10 
++ "GQview" Exec exec gqview -r 
++ "Gwenview" Exec exec gwenview 
++ "KolourPaint" Exec exec kolourpaint 
++ "Krita" Exec exec krita 
++ "LibreOffice Draw" Exec exec libreoffice --draw 
++ "MuPDF" Exec exec mupdf 
++ "Okular" Exec exec okular 
++ "Pencil" Exec exec "/usr/bin/evoluspencil"
++ "XSane Scanner Tool" Exec exec xsane
++ "FontForge" Exec exec fontforge 
++ "GNU Image Manipulation Program" Exec exec gimp-2.10 
++ "GQview" Exec exec gqview -r 
++ "Gwenview" Exec exec gwenview 
++ "KolourPaint" Exec exec kolourpaint 
++ "Krita" Exec exec krita 
++ "LibreOffice Draw" Exec exec libreoffice --draw 
++ "MuPDF" Exec exec mupdf 
++ "Okular" Exec exec okular 
++ "Pencil" Exec exec "/usr/bin/evoluspencil"
++ "XSane Scanner Tool" Exec exec xsane
++ "" Nop
++ "More Applications" Popup "Graphics/More Applications"
+
+DestroyMenu "Graphics/More Applications"
+AddToMenu "Graphics/More Applications" "Graphics/More Applications" Title
++ "KColorChooser" Exec exec kcolorchooser
++ "KRuler" Exec exec kruler
++ "KColorChooser" Exec exec kcolorchooser
++ "KRuler" Exec exec kruler
+
+DestroyMenu "Internet"
+AddToMenu "Internet" "Internet" Title
++ "Avahi SSH Server Browser" Exec exec /usr/bin/bssh
++ "Avahi VNC Server Browser" Exec exec /usr/bin/bvnc
++ "Discord" Exec exec /opt/discord/Discord
++ "Empathy" Exec exec empathy
++ "Falkon" Exec exec falkon 
++ "FileZilla" Exec exec filezilla
++ "Flarq" Exec exec flarq
++ "Fldigi" Exec exec fldigi
++ "Flrig" Exec exec flrig
++ "Google Chrome" Exec exec /usr/bin/google-chrome-stable 
++ "Gpredict" Exec exec gpredict
++ "IM Contacts" Exec exec ktp-contactlist 
++ "KDE IM Log Viewer" Exec exec ktp-log-viewer 
++ "KGet" Exec exec kget -qwindowtitle  
++ "KRDC" Exec exec krdc -qwindowtitle  
++ "KVIrc" Exec exec kvirc -m 
++ "Kopete" Exec exec kopete -qwindowtitle  
++ "Krfb" Exec exec krfb -qwindowtitle  
++ "Mail Reader" Exec exec exo-open --launch MailReader 
++ "Mozilla Firefox" Exec exec firefox --new-window 
++ "Pidgin Internet Messenger" Exec exec pidgin
++ "QTerm" Exec exec QTerm -caption ""  
++ "Qtel" Exec exec /usr/bin/qtel
++ "Remmina" Exec exec remmina-file-wrapper 
++ "Slack" Exec exec /usr/bin/slack -s 
++ "Steam" Exec exec /usr/bin/steam 
++ "Telegram Desktop" Exec exec telegram-desktop -- 
++ "TigerVNC Viewer" Exec exec /usr/bin/vncviewer
++ "Web Browser" Exec exec exo-open --launch WebBrowser 
++ "WeeChat" Exec exec xterm -e weechat 
++ "Wireshark" Exec exec wireshark 
++ "wpa_gui" Exec exec wpa_gui
++ "Avahi SSH Server Browser" Exec exec /usr/bin/bssh
++ "Avahi VNC Server Browser" Exec exec /usr/bin/bvnc
++ "Discord" Exec exec /opt/discord/Discord
++ "Empathy" Exec exec empathy
++ "Falkon" Exec exec falkon 
++ "FileZilla" Exec exec filezilla
++ "Flarq" Exec exec flarq
++ "Fldigi" Exec exec fldigi
++ "Flrig" Exec exec flrig
++ "Google Chrome" Exec exec /usr/bin/google-chrome-stable 
++ "Gpredict" Exec exec gpredict
++ "IM Contacts" Exec exec ktp-contactlist 
++ "KDE IM Log Viewer" Exec exec ktp-log-viewer 
++ "KGet" Exec exec kget -qwindowtitle  
++ "KRDC" Exec exec krdc -qwindowtitle  
++ "KVIrc" Exec exec kvirc -m 
++ "Kopete" Exec exec kopete -qwindowtitle  
++ "Krfb" Exec exec krfb -qwindowtitle  
++ "Mail Reader" Exec exec exo-open --launch MailReader 
++ "Mozilla Firefox" Exec exec firefox --new-window 
++ "Pidgin Internet Messenger" Exec exec pidgin
++ "QTerm" Exec exec QTerm -caption ""  
++ "Qtel" Exec exec /usr/bin/qtel
++ "Remmina" Exec exec remmina-file-wrapper 
++ "Slack" Exec exec /usr/bin/slack -s 
++ "Steam" Exec exec /usr/bin/steam 
++ "Telegram Desktop" Exec exec telegram-desktop -- 
++ "TigerVNC Viewer" Exec exec /usr/bin/vncviewer
++ "Web Browser" Exec exec exo-open --launch WebBrowser 
++ "WeeChat" Exec exec xterm -e weechat 
++ "Wireshark" Exec exec wireshark 
++ "wpa_gui" Exec exec wpa_gui
++ "" Nop
+
+DestroyMenu "Multimedia"
+AddToMenu "Multimedia" "Multimedia" Title
++ "Audacity" Exec exec env UBUNTU_MENUPROXY=0 audacity 
++ "Baudline" Exec exec /usr/bin/baudline
++ "Baudline (jack support)" Exec exec /usr/bin/baudline_jack
++ "Calf Plugin Pack for JACK" Exec exec calfjackhost
++ "Cheese" Exec exec cheese
++ "Dragon Player" Exec exec dragon 
++ "Echomixer" Exec exec echomixer
++ "Elisa" Exec exec elisa 
++ "Frescobaldi" Exec exec frescobaldi 
++ "HDAJackRetask" Exec exec hdajackretask
++ "Hwmixvolume" Exec exec hwmixvolume
++ "JACK Rack" Exec exec jack-rack
++ "JAMin" Exec exec jamin
++ "JuK" Exec exec juk 
++ "K3b" Exec exec k3b 
++ "KMix" Exec exec kmix -qwindowtitle "" 
++ "Kdenlive" Exec exec kdenlive 
++ "Kwave Sound Editor" Exec exec kwave 
++ "LMMS" Exec exec lmms 
++ "Message Aggregator" Exec exec message_aggregator
++ "MuseScore 3 (3.5.0 unstable)" Exec exec mscore 
++ "OBS Studio" Exec exec obs
++ "Phonon Audio and Video" Exec exec phononsettings
++ "PulseAudio Volume Control" Exec exec pavucontrol-qt
++ "QjackCtl" Exec exec qjackctl
++ "Qsynth" Exec exec qsynth
++ "Qt V4L2 test Utility" Exec exec qv4l2
++ "Qt V4L2 video capture utility" Exec exec qvidcap
++ "Rosegarden" Exec exec rosegarden 
++ "Schism Tracker" Exec exec schismtracker 
++ "Spotify" Exec exec spotify-dbus.py 
++ "VLC media player" Exec exec /usr/bin/vlc --started-from-file 
++ "ardour6" Exec exec ardour6
++ "js8call" Exec exec js8call
++ "mpv Media Player" Exec exec mpv --player-operation-mode=pseudo-gui -- 
++ "wsjtx" Exec exec wsjtx
++ "Audacity" Exec exec env UBUNTU_MENUPROXY=0 audacity 
++ "Baudline" Exec exec /usr/bin/baudline
++ "Baudline (jack support)" Exec exec /usr/bin/baudline_jack
++ "Calf Plugin Pack for JACK" Exec exec calfjackhost
++ "Cheese" Exec exec cheese
++ "Dragon Player" Exec exec dragon 
++ "Echomixer" Exec exec echomixer
++ "Elisa" Exec exec elisa 
++ "Frescobaldi" Exec exec frescobaldi 
++ "HDAJackRetask" Exec exec hdajackretask
++ "Hwmixvolume" Exec exec hwmixvolume
++ "JACK Rack" Exec exec jack-rack
++ "JAMin" Exec exec jamin
++ "JuK" Exec exec juk 
++ "K3b" Exec exec k3b 
++ "KMix" Exec exec kmix -qwindowtitle "" 
++ "Kdenlive" Exec exec kdenlive 
++ "Kwave Sound Editor" Exec exec kwave 
++ "LMMS" Exec exec lmms 
++ "Message Aggregator" Exec exec message_aggregator
++ "MuseScore 3 (3.5.0 unstable)" Exec exec mscore 
++ "OBS Studio" Exec exec obs
++ "Phonon Audio and Video" Exec exec phononsettings
++ "PulseAudio Volume Control" Exec exec pavucontrol-qt
++ "QjackCtl" Exec exec qjackctl
++ "Qsynth" Exec exec qsynth
++ "Qt V4L2 test Utility" Exec exec qv4l2
++ "Qt V4L2 video capture utility" Exec exec qvidcap
++ "Rosegarden" Exec exec rosegarden 
++ "Schism Tracker" Exec exec schismtracker 
++ "Spotify" Exec exec spotify-dbus.py 
++ "VLC media player" Exec exec /usr/bin/vlc --started-from-file 
++ "ardour6" Exec exec ardour6
++ "js8call" Exec exec js8call
++ "mpv Media Player" Exec exec mpv --player-operation-mode=pseudo-gui -- 
++ "wsjtx" Exec exec wsjtx
++ "" Nop
+
+DestroyMenu "Office"
+AddToMenu "Office" "Office" Title
++ "LibreOffice" Exec exec libreoffice 
++ "LibreOffice Base" Exec exec libreoffice --base 
++ "LibreOffice Calc" Exec exec libreoffice --calc 
++ "LibreOffice Draw" Exec exec libreoffice --draw 
++ "LibreOffice Impress" Exec exec libreoffice --impress 
++ "LibreOffice Math" Exec exec libreoffice --math 
++ "LibreOffice Writer" Exec exec libreoffice --writer 
++ "Mozilla Thunderbird" Exec exec /usr/bin/thunderbird 
++ "Okular" Exec exec okular 
++ "XMind" Exec exec xmind
++ "" Nop
++ "LibreOffice" Exec exec libreoffice 
++ "LibreOffice Base" Exec exec libreoffice --base 
++ "LibreOffice Calc" Exec exec libreoffice --calc 
++ "LibreOffice Draw" Exec exec libreoffice --draw 
++ "LibreOffice Impress" Exec exec libreoffice --impress 
++ "LibreOffice Math" Exec exec libreoffice --math 
++ "LibreOffice Writer" Exec exec libreoffice --writer 
++ "Mozilla Thunderbird" Exec exec /usr/bin/thunderbird 
++ "Okular" Exec exec okular 
++ "XMind" Exec exec xmind
++ "" Nop
+
+DestroyMenu "Science & Math"
+AddToMenu "Science & Math" "Science & Math" Title
++ "GNU Radio Companion" Exec exec gnuradio-companion 
++ "boinc" Exec exec boincmgr
++ "GNU Radio Companion" Exec exec gnuradio-companion 
++ "boinc" Exec exec boincmgr
+
+DestroyMenu "Settings"
+AddToMenu "Settings" "Settings" Title
++ "ARandR" Exec exec arandr
++ "Accessibility" Exec exec xfce4-accessibility-settings
++ "Advanced Network Configuration" Exec exec nm-connection-editor
++ "Appearance" Exec exec xfce4-appearance-settings
++ "Clipboard Manager Settings" Exec exec xfce4-clipman-settings
++ "Desktop" Exec exec xfdesktop-settings
++ "Display" Exec exec xfce4-display-settings
++ "Elementary Configuration" Exec exec elementary_config
++ "File Manager Settings" Exec exec thunar-settings
++ "KDE System Settings" Exec exec systemsettings5
++ "Keyboard" Exec exec xfce4-keyboard-settings
++ "MIME Type Editor" Exec exec xfce4-mime-settings
++ "Monitor Settings" Exec exec lxrandr
++ "Mouse and Touchpad" Exec exec xfce4-mouse-settings
++ "NVIDIA X Server Settings" Exec exec /usr/bin/nvidia-settings
++ "Notifications" Exec exec xfce4-notifyd-config
++ "Panel" Exec exec xfce4-panel --preferences
++ "Power Manager" Exec exec xfce4-power-manager-settings
++ "Preferred Applications" Exec exec exo-preferred-applications
++ "Print Settings" Exec exec system-config-printer
++ "Removable Drives and Media" Exec exec thunar-volman-settings
++ "Screensaver" Exec exec xscreensaver-demo
++ "Session and Startup" Exec exec xfce4-session-settings
++ "Settings Editor" Exec exec xfce4-settings-editor
++ "Settings Manager" Exec exec xfce4-settings-manager
++ "System Settings" Exec exec systemsettings5
++ "Tint2 Settings" Exec exec tint2conf
++ "Window Manager" Exec exec xfwm4-settings
++ "Window Manager Tweaks" Exec exec xfwm4-tweaks-settings
++ "Workspaces" Exec exec xfwm4-workspace-settings
++ "Xfce Terminal" Exec exec xfce4-terminal --preferences
++ "ARandR" Exec exec arandr
++ "Accessibility" Exec exec xfce4-accessibility-settings
++ "Advanced Network Configuration" Exec exec nm-connection-editor
++ "Appearance" Exec exec xfce4-appearance-settings
++ "Clipboard Manager Settings" Exec exec xfce4-clipman-settings
++ "Desktop" Exec exec xfdesktop-settings
++ "Display" Exec exec xfce4-display-settings
++ "Elementary Configuration" Exec exec elementary_config
++ "File Manager Settings" Exec exec thunar-settings
++ "KDE System Settings" Exec exec systemsettings5
++ "Keyboard" Exec exec xfce4-keyboard-settings
++ "MIME Type Editor" Exec exec xfce4-mime-settings
++ "Monitor Settings" Exec exec lxrandr
++ "Mouse and Touchpad" Exec exec xfce4-mouse-settings
++ "NVIDIA X Server Settings" Exec exec /usr/bin/nvidia-settings
++ "Notifications" Exec exec xfce4-notifyd-config
++ "Panel" Exec exec xfce4-panel --preferences
++ "Power Manager" Exec exec xfce4-power-manager-settings
++ "Preferred Applications" Exec exec exo-preferred-applications
++ "Print Settings" Exec exec system-config-printer
++ "Removable Drives and Media" Exec exec thunar-volman-settings
++ "Screensaver" Exec exec xscreensaver-demo
++ "Session and Startup" Exec exec xfce4-session-settings
++ "Settings Editor" Exec exec xfce4-settings-editor
++ "Settings Manager" Exec exec xfce4-settings-manager
++ "System Settings" Exec exec systemsettings5
++ "Tint2 Settings" Exec exec tint2conf
++ "Window Manager" Exec exec xfwm4-settings
++ "Window Manager Tweaks" Exec exec xfwm4-tweaks-settings
++ "Workspaces" Exec exec xfwm4-workspace-settings
++ "Xfce Terminal" Exec exec xfce4-terminal --preferences
+
+DestroyMenu "System"
+AddToMenu "System" "System" Title
++ "Bulk Rename" Exec exec /usr/lib64/Thunar/ThunarBulkRename 
++ "Cool Retro Term" Exec exec cool-retro-term
++ "Disk Usage Analyzer" Exec exec baobab
++ "Dolphin" Exec exec dolphin 
++ "GKrellM" Exec exec gkrellm
++ "Hardware Lister" Exec exec /usr/sbin/gtk-lshw
++ "Htop" Exec exec xterm -e htop
++ "Info Center" Exec exec kinfocenter
++ "KDiskFree" Exec exec kdf -qwindowtitle 
++ "KSysGuard" Exec exec ksysguard 
++ "KSystemLog" Exec exec ksystemlog -qwindowtitle 
++ "KWalletManager" Exec exec kwalletmanager5 
++ "Konsole" Exec exec konsole
++ "KwikDisk" Exec exec kwikdisk -qwindowtitle 
++ "Log Out" Exec exec xfce4-session-logout
++ "Manage Printing" Exec exec /usr/bin/xdg-open http://localhost:631/
++ "NVIDIA X Server Settings" Exec exec /usr/bin/nvidia-settings
++ "Oracle VM VirtualBox" Exec exec VirtualBox 
++ "Print Settings" Exec exec system-config-printer
++ "Sensor Viewer" Exec exec xfce4-sensors
++ "Terminology" Exec exec terminology
++ "Thunar File Manager" Exec exec thunar 
++ "Tint2" Exec exec tint2
++ "USB Viewer" Exec exec usbview
++ "UXTerm" Exec exec uxterm
++ "VMware Player" Exec exec /usr/bin/vmplayer 
++ "WoeUSB" Exec exec woeusbgui
++ "XTerm" Exec exec xterm
++ "Xfce Terminal" Exec exec xfce4-terminal
++ "Yakuake" Exec exec yakuake
++ "ranger" Exec exec xterm -e ranger
++ "rxvt-unicode" Exec exec urxvt
++ "Bulk Rename" Exec exec /usr/lib64/Thunar/ThunarBulkRename 
++ "Cool Retro Term" Exec exec cool-retro-term
++ "Disk Usage Analyzer" Exec exec baobab
++ "Dolphin" Exec exec dolphin 
++ "GKrellM" Exec exec gkrellm
++ "Hardware Lister" Exec exec /usr/sbin/gtk-lshw
++ "Htop" Exec exec xterm -e htop
++ "Info Center" Exec exec kinfocenter
++ "KDiskFree" Exec exec kdf -qwindowtitle 
++ "KSysGuard" Exec exec ksysguard 
++ "KSystemLog" Exec exec ksystemlog -qwindowtitle 
++ "KWalletManager" Exec exec kwalletmanager5 
++ "Konsole" Exec exec konsole
++ "KwikDisk" Exec exec kwikdisk -qwindowtitle 
++ "Log Out" Exec exec xfce4-session-logout
++ "Manage Printing" Exec exec /usr/bin/xdg-open http://localhost:631/
++ "NVIDIA X Server Settings" Exec exec /usr/bin/nvidia-settings
++ "Oracle VM VirtualBox" Exec exec VirtualBox 
++ "Print Settings" Exec exec system-config-printer
++ "Sensor Viewer" Exec exec xfce4-sensors
++ "Terminology" Exec exec terminology
++ "Thunar File Manager" Exec exec thunar 
++ "Tint2" Exec exec tint2
++ "USB Viewer" Exec exec usbview
++ "UXTerm" Exec exec uxterm
++ "VMware Player" Exec exec /usr/bin/vmplayer 
++ "WoeUSB" Exec exec woeusbgui
++ "XTerm" Exec exec xterm
++ "Xfce Terminal" Exec exec xfce4-terminal
++ "Yakuake" Exec exec yakuake
++ "ranger" Exec exec xterm -e ranger
++ "rxvt-unicode" Exec exec urxvt
++ "" Nop
+
+DestroyMenu "Utilities"
+AddToMenu "Utilities" "Utilities" Title
++ "About Xfce" Exec exec xfce4-about
++ "Active@ Disk Editor" Exec exec /opt/lsoft/DiskEditor/DiskEditor.sh
++ "Application Finder" Exec exec xfce4-appfinder
++ "Ark" Exec exec ark 
++ "Bulk Rename" Exec exec /usr/lib64/Thunar/ThunarBulkRename 
++ "Clipboard Manager" Exec exec xfce4-clipman
++ "Elementary Perf" Exec exec elementary_perf
++ "Elementary Test" Exec exec elementary_test
++ "File Manager" Exec exec exo-open --launch FileManager 
++ "Filelight" Exec exec filelight 
++ "Frescobaldi" Exec exec frescobaldi 
++ "HP Device Manager" Exec exec hp-toolbox
++ "KBackup" Exec exec kbackup 
++ "KCalc" Exec exec kcalc
++ "KCharSelect" Exec exec kcharselect --qwindowtitle 
++ "KFind" Exec exec kfind 
++ "KTeaTime" Exec exec kteatime
++ "KTimer" Exec exec ktimer
++ "KWrite" Exec exec kwrite 
++ "Kate" Exec exec kate -b 
++ "KeePassXC" Exec exec keepassxc 
++ "Klipper" Exec exec klipper
++ "Okteta" Exec exec okteta 
++ "QtADB" Exec exec QtADB
++ "Run Program..." Exec exec xfce4-appfinder --collapsed
++ "Sensor Viewer" Exec exec xfce4-sensors
++ "Software Token" Exec exec stoken-gui
++ "Software Token (small)" Exec exec stoken-gui --small
++ "Spectacle" Exec exec qdbus org.kde.Spectacle / StartAgent
++ "Sweeper" Exec exec sweeper
++ "Terminal Emulator" Exec exec exo-open --launch TerminalEmulator
++ "Thunar File Manager" Exec exec thunar 
++ "Vim" Exec exec xterm -e vim 
++ "About Xfce" Exec exec xfce4-about
++ "Active@ Disk Editor" Exec exec /opt/lsoft/DiskEditor/DiskEditor.sh
++ "Application Finder" Exec exec xfce4-appfinder
++ "Ark" Exec exec ark 
++ "Bulk Rename" Exec exec /usr/lib64/Thunar/ThunarBulkRename 
++ "Clipboard Manager" Exec exec xfce4-clipman
++ "Elementary Perf" Exec exec elementary_perf
++ "Elementary Test" Exec exec elementary_test
++ "File Manager" Exec exec exo-open --launch FileManager 
++ "Filelight" Exec exec filelight 
++ "Frescobaldi" Exec exec frescobaldi 
++ "HP Device Manager" Exec exec hp-toolbox
++ "KBackup" Exec exec kbackup 
++ "KCalc" Exec exec kcalc
++ "KCharSelect" Exec exec kcharselect --qwindowtitle 
++ "KFind" Exec exec kfind 
++ "KTeaTime" Exec exec kteatime
++ "KTimer" Exec exec ktimer
++ "KWrite" Exec exec kwrite 
++ "Kate" Exec exec kate -b 
++ "KeePassXC" Exec exec keepassxc 
++ "Klipper" Exec exec klipper
++ "Okteta" Exec exec okteta 
++ "QtADB" Exec exec QtADB
++ "Run Program..." Exec exec xfce4-appfinder --collapsed
++ "Sensor Viewer" Exec exec xfce4-sensors
++ "Software Token" Exec exec stoken-gui
++ "Software Token (small)" Exec exec stoken-gui --small
++ "Spectacle" Exec exec qdbus org.kde.Spectacle / StartAgent
++ "Sweeper" Exec exec sweeper
++ "Terminal Emulator" Exec exec exo-open --launch TerminalEmulator
++ "Thunar File Manager" Exec exec thunar 
++ "Vim" Exec exec xterm -e vim 
++ "" Nop
+
+DestroyMenu "Lost & Found"
+AddToMenu "Lost & Found" "Lost & Found" Title
++ "4nec2" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/ProgramData/Microsoft/Windows/Start\\ Menu/Programs/4nec2/4nec2.lnk
++ "4nec2 help" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/ProgramData/Microsoft/Windows/Start\\ Menu/Programs/4nec2/4nec2\\ help.lnk
++ "4nec2 on the Web" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/ProgramData/Microsoft/Windows/Start\\ Menu/Programs/4nec2/4nec2\\ on\\ the\\ Web.lnk
++ "Autosaved files" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/users/johns/Start\\ Menu/Programs/MixW/Autosaved\\ files.lnk
++ "Browse C: Drive" Exec exec xdg-open .wine/dosdevices/c:
++ "Browse MixW folder" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/users/johns/Start\\ Menu/Programs/MixW/Browse\\ MixW\\ folder.lnk
++ "Build" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/ProgramData/Microsoft/Windows/Start\\ Menu/Programs/4nec2/Build.lnk
++ "Build help" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/ProgramData/Microsoft/Windows/Start\\ Menu/Programs/4nec2/Build\\ help.lnk
++ "CLOCK" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/ProgramData/Microsoft/Windows/Start\\ Menu/Programs/MULTIPSK/CLOCK.lnk
++ "CS-9700" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/ProgramData/Microsoft/Windows/Start\\ Menu/Programs/CS-9700/CS-9700.lnk
++ "CS-9700 Initial Setup" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/ProgramData/Microsoft/Windows/Start\\ Menu/Programs/CS-9700/CS-9700\\ Initial\\ Setup.lnk
++ "Cisco Anyconnect Secure Mobility Client" Exec exec /opt/cisco/anyconnect/bin/vpnui
++ "Configure DXGL" Exec exec env KAM_WINEPREFIX="/home/johns/.local/share/Steam/steamapps/common/Knights and Merchants Historical Version/Wine/prefix/.config" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.local/share/Steam/steamapps/common/Knights\\ and\\ Merchants\\ Historical\\ Version/Wine/prefix/.config/dosdevices/c:/users/johns/Start\\ Menu/Programs/DXGL/Configure\\ DXGL.lnk
++ "Configure Wine" Exec exec winecfg
++ "DXGL Help" Exec exec env KAM_WINEPREFIX="/home/johns/.local/share/Steam/steamapps/common/Knights and Merchants Historical Version/Wine/prefix/.config" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.local/share/Steam/steamapps/common/Knights\\ and\\ Merchants\\ Historical\\ Version/Wine/prefix/.config/dosdevices/c:/users/johns/Start\\ Menu/Programs/DXGL/DXGL\\ Help.lnk
++ "DXGL Test" Exec exec env KAM_WINEPREFIX="/home/johns/.local/share/Steam/steamapps/common/Knights and Merchants Historical Version/Wine/prefix/.config" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.local/share/Steam/steamapps/common/Knights\\ and\\ Merchants\\ Historical\\ Version/Wine/prefix/.config/dosdevices/c:/users/johns/Start\\ Menu/Programs/DXGL/DXGL\\ Test.lnk
++ "Dire Wolf" Exec exec xterm -hold -title "Dire Wolf" -bg white -e "/usr/localusr//bin/direwolf"
++ "GRig" Exec exec grig
++ "Getting Started" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/ProgramData/Microsoft/Windows/Start\\ Menu/Programs/4nec2/Getting\\ Started.lnk
++ "Help file" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/users/johns/Start\\ Menu/Programs/MixW/Help\\ file.lnk
++ "Help for CS-9700" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/ProgramData/Microsoft/Windows/Start\\ Menu/Programs/CS-9700/Help\\ for\\ CS-9700.lnk
++ "License agreement" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/users/johns/Start\\ Menu/Programs/MixW/License\\ agreement.lnk
++ "MULTIPSK" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/ProgramData/Microsoft/Windows/Start\\ Menu/Programs/MULTIPSK/MULTIPSK.lnk
++ "Mathematica 12" Exec exec /usr/local/Wolfram/Mathematica/12.1/Executables/Mathematica 
++ "MixW 3.2" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/users/johns/Start\\ Menu/Programs/MixW/MixW\\ 3.2.lnk
++ "MixW 3.2 - dual channel version" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/users/johns/Start\\ Menu/Programs/MixW/MixW\\ 3.2\\ -\\ dual\\ channel\\ version.lnk
++ "MixW home page" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/users/johns/Start\\ Menu/Programs/MixW/MixW\\ home\\ page.lnk
++ "NecLab" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/users/johns/Start\\ Menu/Programs/NecLab/NecLab.lnk
++ "Notepad" Exec exec notepad
++ "Read Me first" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/ProgramData/Microsoft/Windows/Start\\ Menu/Programs/4nec2/Read\\ Me\\ first.lnk
++ "Third-party Credits" Exec exec env KAM_WINEPREFIX="/home/johns/.local/share/Steam/steamapps/common/Knights and Merchants Historical Version/Wine/prefix/.config" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.local/share/Steam/steamapps/common/Knights\\ and\\ Merchants\\ Historical\\ Version/Wine/prefix/.config/dosdevices/c:/users/johns/Start\\ Menu/Programs/DXGL/Third-party\\ Credits.lnk
++ "Uninstall" Exec exec env KAM_WINEPREFIX="/home/johns/.local/share/Steam/steamapps/common/Knights and Merchants Historical Version/Wine/prefix/.config" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.local/share/Steam/steamapps/common/Knights\\ and\\ Merchants\\ Historical\\ Version/Wine/prefix/.config/dosdevices/c:/users/johns/Start\\ Menu/Programs/DXGL/Uninstall.lnk
++ "Uninstall 4nec2" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/ProgramData/Microsoft/Windows/Start\\ Menu/Programs/4nec2/Uninstall\\ 4nec2.lnk
++ "Uninstall Wine Software" Exec exec wine uninstaller
++ "Version history" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/users/johns/Start\\ Menu/Programs/MixW/Version\\ history.lnk
++ "View" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/ProgramData/Microsoft/Windows/Start\\ Menu/Programs/4nec2/View.lnk
++ "View help" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/ProgramData/Microsoft/Windows/Start\\ Menu/Programs/4nec2/View\\ help.lnk
++ "Website" Exec exec env KAM_WINEPREFIX="/home/johns/.local/share/Steam/steamapps/common/Knights and Merchants Historical Version/Wine/prefix/.config" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.local/share/Steam/steamapps/common/Knights\\ and\\ Merchants\\ Historical\\ Version/Wine/prefix/.config/dosdevices/c:/users/johns/Start\\ Menu/Programs/DXGL/Website.lnk
++ "hp-uiscan" Exec exec /usr/bin/hp-uiscan
++ "4nec2" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/ProgramData/Microsoft/Windows/Start\\ Menu/Programs/4nec2/4nec2.lnk
++ "4nec2 help" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/ProgramData/Microsoft/Windows/Start\\ Menu/Programs/4nec2/4nec2\\ help.lnk
++ "4nec2 on the Web" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/ProgramData/Microsoft/Windows/Start\\ Menu/Programs/4nec2/4nec2\\ on\\ the\\ Web.lnk
++ "Autosaved files" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/users/johns/Start\\ Menu/Programs/MixW/Autosaved\\ files.lnk
++ "Browse C: Drive" Exec exec xdg-open .wine/dosdevices/c:
++ "Browse MixW folder" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/users/johns/Start\\ Menu/Programs/MixW/Browse\\ MixW\\ folder.lnk
++ "Build" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/ProgramData/Microsoft/Windows/Start\\ Menu/Programs/4nec2/Build.lnk
++ "Build help" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/ProgramData/Microsoft/Windows/Start\\ Menu/Programs/4nec2/Build\\ help.lnk
++ "CLOCK" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/ProgramData/Microsoft/Windows/Start\\ Menu/Programs/MULTIPSK/CLOCK.lnk
++ "CS-9700" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/ProgramData/Microsoft/Windows/Start\\ Menu/Programs/CS-9700/CS-9700.lnk
++ "CS-9700 Initial Setup" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/ProgramData/Microsoft/Windows/Start\\ Menu/Programs/CS-9700/CS-9700\\ Initial\\ Setup.lnk
++ "Cisco Anyconnect Secure Mobility Client" Exec exec /opt/cisco/anyconnect/bin/vpnui
++ "Configure DXGL" Exec exec env KAM_WINEPREFIX="/home/johns/.local/share/Steam/steamapps/common/Knights and Merchants Historical Version/Wine/prefix/.config" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.local/share/Steam/steamapps/common/Knights\\ and\\ Merchants\\ Historical\\ Version/Wine/prefix/.config/dosdevices/c:/users/johns/Start\\ Menu/Programs/DXGL/Configure\\ DXGL.lnk
++ "Configure Wine" Exec exec winecfg
++ "DXGL Help" Exec exec env KAM_WINEPREFIX="/home/johns/.local/share/Steam/steamapps/common/Knights and Merchants Historical Version/Wine/prefix/.config" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.local/share/Steam/steamapps/common/Knights\\ and\\ Merchants\\ Historical\\ Version/Wine/prefix/.config/dosdevices/c:/users/johns/Start\\ Menu/Programs/DXGL/DXGL\\ Help.lnk
++ "DXGL Test" Exec exec env KAM_WINEPREFIX="/home/johns/.local/share/Steam/steamapps/common/Knights and Merchants Historical Version/Wine/prefix/.config" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.local/share/Steam/steamapps/common/Knights\\ and\\ Merchants\\ Historical\\ Version/Wine/prefix/.config/dosdevices/c:/users/johns/Start\\ Menu/Programs/DXGL/DXGL\\ Test.lnk
++ "Dire Wolf" Exec exec xterm -hold -title "Dire Wolf" -bg white -e "/usr/localusr//bin/direwolf"
++ "GRig" Exec exec grig
++ "Getting Started" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/ProgramData/Microsoft/Windows/Start\\ Menu/Programs/4nec2/Getting\\ Started.lnk
++ "Help file" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/users/johns/Start\\ Menu/Programs/MixW/Help\\ file.lnk
++ "Help for CS-9700" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/ProgramData/Microsoft/Windows/Start\\ Menu/Programs/CS-9700/Help\\ for\\ CS-9700.lnk
++ "License agreement" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/users/johns/Start\\ Menu/Programs/MixW/License\\ agreement.lnk
++ "MULTIPSK" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/ProgramData/Microsoft/Windows/Start\\ Menu/Programs/MULTIPSK/MULTIPSK.lnk
++ "Mathematica 12" Exec exec /usr/local/Wolfram/Mathematica/12.1/Executables/Mathematica 
++ "MixW 3.2" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/users/johns/Start\\ Menu/Programs/MixW/MixW\\ 3.2.lnk
++ "MixW 3.2 - dual channel version" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/users/johns/Start\\ Menu/Programs/MixW/MixW\\ 3.2\\ -\\ dual\\ channel\\ version.lnk
++ "MixW home page" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/users/johns/Start\\ Menu/Programs/MixW/MixW\\ home\\ page.lnk
++ "NecLab" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/users/johns/Start\\ Menu/Programs/NecLab/NecLab.lnk
++ "Notepad" Exec exec notepad
++ "Read Me first" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/ProgramData/Microsoft/Windows/Start\\ Menu/Programs/4nec2/Read\\ Me\\ first.lnk
++ "Third-party Credits" Exec exec env KAM_WINEPREFIX="/home/johns/.local/share/Steam/steamapps/common/Knights and Merchants Historical Version/Wine/prefix/.config" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.local/share/Steam/steamapps/common/Knights\\ and\\ Merchants\\ Historical\\ Version/Wine/prefix/.config/dosdevices/c:/users/johns/Start\\ Menu/Programs/DXGL/Third-party\\ Credits.lnk
++ "Uninstall" Exec exec env KAM_WINEPREFIX="/home/johns/.local/share/Steam/steamapps/common/Knights and Merchants Historical Version/Wine/prefix/.config" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.local/share/Steam/steamapps/common/Knights\\ and\\ Merchants\\ Historical\\ Version/Wine/prefix/.config/dosdevices/c:/users/johns/Start\\ Menu/Programs/DXGL/Uninstall.lnk
++ "Uninstall 4nec2" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/ProgramData/Microsoft/Windows/Start\\ Menu/Programs/4nec2/Uninstall\\ 4nec2.lnk
++ "Uninstall Wine Software" Exec exec wine uninstaller
++ "Version history" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/users/johns/Start\\ Menu/Programs/MixW/Version\\ history.lnk
++ "View" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/ProgramData/Microsoft/Windows/Start\\ Menu/Programs/4nec2/View.lnk
++ "View help" Exec exec env WINEPREFIX="/home/johns/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.wine/dosdevices/c:/ProgramData/Microsoft/Windows/Start\\ Menu/Programs/4nec2/View\\ help.lnk
++ "Website" Exec exec env KAM_WINEPREFIX="/home/johns/.local/share/Steam/steamapps/common/Knights and Merchants Historical Version/Wine/prefix/.config" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/johns/.local/share/Steam/steamapps/common/Knights\\ and\\ Merchants\\ Historical\\ Version/Wine/prefix/.config/dosdevices/c:/users/johns/Start\\ Menu/Programs/DXGL/Website.lnk
++ "hp-uiscan" Exec exec /usr/bin/hp-uiscan
+
+DestroyMenu "FvwmKinfocenter"
+AddToMenu "FvwmKinfocenter" "Kinfocenter" Title
+
+DestroyMenu "FvwmXfce Settings Manager"
+AddToMenu "FvwmXfce Settings Manager" "Xfce Settings Manager" Title
++ "ARandR" Exec exec arandr
++ "Advanced Network Configuration" Exec exec nm-connection-editor
++ "Elementary Configuration" Exec exec elementary_config
++ "KDE System Settings" Exec exec systemsettings5
++ "Monitor Settings" Exec exec lxrandr
++ "NVIDIA X Server Settings" Exec exec /usr/bin/nvidia-settings
++ "Print Settings" Exec exec system-config-printer
++ "Screensaver" Exec exec xscreensaver-demo
++ "Settings Editor" Exec exec xfce4-settings-editor
++ "System Settings" Exec exec systemsettings5
++ "Tint2 Settings" Exec exec tint2conf
++ "Personal" Popup "Personal"
++ "Hardware" Popup "Hardware"
++ "System" Popup "System"
++ "Other" Popup "Other"
++ "ARandR" Exec exec arandr
++ "Advanced Network Configuration" Exec exec nm-connection-editor
++ "Elementary Configuration" Exec exec elementary_config
++ "KDE System Settings" Exec exec systemsettings5
++ "Monitor Settings" Exec exec lxrandr
++ "NVIDIA X Server Settings" Exec exec /usr/bin/nvidia-settings
++ "Print Settings" Exec exec system-config-printer
++ "Screensaver" Exec exec xscreensaver-demo
++ "Settings Editor" Exec exec xfce4-settings-editor
++ "System Settings" Exec exec systemsettings5
++ "Tint2 Settings" Exec exec tint2conf
+
+DestroyMenu "Personal"
+AddToMenu "Personal" "Personal" Title
++ "Appearance" Exec exec xfce4-appearance-settings
++ "Clipboard Manager Settings" Exec exec xfce4-clipman-settings
++ "Desktop" Exec exec xfdesktop-settings
++ "File Manager Settings" Exec exec thunar-settings
++ "Notifications" Exec exec xfce4-notifyd-config
++ "Panel" Exec exec xfce4-panel --preferences
++ "Preferred Applications" Exec exec exo-preferred-applications
++ "Screensaver" Exec exec xscreensaver-demo
++ "Window Manager" Exec exec xfwm4-settings
++ "Window Manager Tweaks" Exec exec xfwm4-tweaks-settings
++ "Workspaces" Exec exec xfwm4-workspace-settings
++ "Xfce Terminal" Exec exec xfce4-terminal --preferences
+
+DestroyMenu "Hardware"
+AddToMenu "Hardware" "Hardware" Title
++ "Display" Exec exec xfce4-display-settings
++ "Keyboard" Exec exec xfce4-keyboard-settings
++ "Mouse and Touchpad" Exec exec xfce4-mouse-settings
++ "Power Manager" Exec exec xfce4-power-manager-settings
++ "Removable Drives and Media" Exec exec thunar-volman-settings
+
+DestroyMenu "System"
+AddToMenu "System" "System" Title
++ "Accessibility" Exec exec xfce4-accessibility-settings
++ "MIME Type Editor" Exec exec xfce4-mime-settings
++ "Session and Startup" Exec exec xfce4-session-settings
+
+DestroyMenu "Other"
+AddToMenu "Other" "Other" Title
++ "Settings Editor" Exec exec xfce4-settings-editor
+
+AddToMenu "RootMenu"
++ "Kf5 Applications" Popup "FvwmKf5 Applications"
++ "Xfce Applications" Popup "FvwmXfce Applications"
++ "Xfce Settings Manager" Popup "FvwmXfce Settings Manager"
++ "" Nop
++ "$[gt.Regenerate]" PipeRead `fvwm-menu-desktop`
++ "$[gt.Configure]" Module FvwmPerl -l fvwm-menu-desktop-config.fpl

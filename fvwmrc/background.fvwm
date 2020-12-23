@@ -1,0 +1,6 @@
+
+DestroyModuleConfig FvwmBacker*
+*FvwmBacker: Command (Desk *) Exec fvwm-root $HOME/wallpapers/nature/01.png
+
+Module FvwmBacker
+
